@@ -1,0 +1,3210 @@
+2018-02-28  David Tardon  <dtardon@redhat.com>  [a374b9c963deeb485b80c8d534ad80b41e059cc6]
+
+	prepare for a release
+
+	Change-Id: I844da04860cf29c8d947395e675eef6f045b7409
+
+2018-02-28  David Tardon  <dtardon@redhat.com>  [a2e4fb779cff37a2cfc6ddf747d7715c545578a6]
+
+	tdf#116018 close shape group correctly
+
+	Regression since commit bbe7f806b95ef427153ba18bff80e674b1704ae5 .
+
+	Change-Id: Ib6d3f58373c7cb0e1ba7a7a720187cc68d9bc7b1
+
+2018-02-20  David Tardon  <dtardon@redhat.com>  [9f49ab526414275f711c6669f6e39f737654bdac]
+
+	ofz#6410 avoid signed integer overflow
+
+	Change-Id: Ife08fdb17a58e6fd32a967a1a553c1d346689209
+
+2018-02-15  David Tardon  <dtardon@redhat.com>  [2be062bd914c000899a03822664f9a523d435f3e]
+
+	drop unnecessary variables
+
+	Change-Id: If3d15512433406399716e458c666b81dc7aa41ef
+
+2018-02-15  David Tardon  <dtardon@redhat.com>  [a500976df2557c4c4c5f90bda0a401319573ceff]
+
+	ofz#6339 avoid signed int overflow
+
+	Change-Id: I6459deafb6d0dabc47e6e446457165b6814f348e
+
+2018-02-02  David Tardon  <dtardon@redhat.com>  [a20be18c6101168da5779ec0faeb045c285bab4c]
+
+	iwyu: prune includes
+
+	Change-Id: I9e8af1510a54668526bf739e30cb98eb4a3b3559
+
+2018-01-20  David Tardon  <dtardon@redhat.com>  [875a2afea73aaea306fb757dc2533c26686206f6]
+
+	ofz#5515 avoid signed integer overflow
+
+	Change-Id: I80207d028bd5348e4f53b8888f7deec1eb48e6c2
+
+2018-01-19  David Tardon  <dtardon@redhat.com>  [5cd502a195c713c1d64efcaa5ebc82cd422a5f5e]
+
+	ofz#5224 avoid signed integer overflow
+
+	Change-Id: I0110730e2d3e8bc329b0599554fa4017d7a214f0
+
+2018-01-09  David Tardon  <dtardon@redhat.com>  [796f5e1f01b1a654964dfd8551cb1eaaa3a51287]
+
+	ofz#4951 do not shift signed value
+
+	Change-Id: I6c2a48589fe6a585ce37c57a59d06c7e5ef31b25
+
+2018-01-09  David Tardon  <dtardon@redhat.com>  [035c728fc49b86c68bf8c8db9a13be1590c04b1a]
+
+	ofz#4916 fix division by 0
+
+	Change-Id: I629399bb0790b27e71bea9cd89485ecd471830d8
+
+2018-01-09  David Tardon  <dtardon@redhat.com>  [ab9002c37b6be82e572c354281de9c7d5e636a61]
+
+	avoid undef. behavior casting arbitrary int to enum
+
+	Just pass the values around as unsigned ints and use the enums as
+	constant sets. The previous code doesn't add any extra type safety
+	anyway.
+
+	Change-Id: I914e136136a97cbf411fad7e1bedbbb79a7c49d2
+
+2018-01-09  David Tardon  <dtardon@redhat.com>  [9c252a30064a7968b8e548db46cfa8018d4876c1]
+
+	ofz#4903 avoid division by 0
+
+	Change-Id: I6322d2093e3f4646a238f68ad9beff9a6a6448d0
+
+2017-12-31  David Tardon  <dtardon@redhat.com>  [4c2c68c098865d96f2568cda9f22584f56d033ea]
+
+	bump version
+
+	Change-Id: Ia7d4fa9ba5aceb838626ed00b80bb3fbacd64a93
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [7f990c439d981dc280faac3db4c9f5805250bc2d]
+
+	cid#1427014 pointer to local outside scope
+
+	Change-Id: Ifaa3eae63b2b2bebbd5337090426253bce26d600
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [f7833801bf3945262e26b110af50910ff0c1748d]
+
+	cid#1267884 pointer to local outside scope
+
+	Change-Id: I67d4a55ecc4ee34da97807788191f05a20f195d1
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [9b59da0d160353173d8fb7d15787974ae24eafa0]
+
+	cid#1267883 pointer to local outside scope
+
+	Change-Id: I0e6f11b1071950d97080de26d8bc59ccf86606b1
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [530c84c1d8bd8cdc9238c23a0c4e68cee7eac53d]
+
+	fix copypasta
+
+	Change-Id: Ibdcda4d3bce06239eeaa22f240081707b17c18d3
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [9f28d5f585cc03bc1dcdffad978dd7ce903f3ff1]
+
+	fix copypasta
+
+	Change-Id: Ibada0e5c6d4ba0825b5e9b66cc1391073b01df51
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [5cf1de8dd9894922023798ecf735ed9c90d4fe68]
+
+	prepare for a release
+
+	Change-Id: If5a278612971ea0926355edf85aac76b625e8396
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [99e33fec6e9372840dc0c2e6d29a2b08a311e00a]
+
+	parse locale information
+
+	Change-Id: If47fadac1a24c6bebb73f530d9623e6b950d7a3f
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [df9a3b0cc2d2af14f2816477f2ca2e65320234a4]
+
+	fix parsing of bold and italic in mspub 2002 docs
+
+	Change-Id: I3945cdf240cd23c593d413d7d964d33e288d873b
+
+2017-12-30  David Tardon  <dtardon@redhat.com>  [45832739afa9280d180d50b34041c4930eb7fd24]
+
+	parse more text formatting properties
+
+	Change-Id: I25aef81ba5b3beaa57726d85b57c7acab79198d1
+
+2017-12-28  David Tardon  <dtardon@redhat.com>  [522860ad23e1aa368fe09885e7973fafc4d456e5]
+
+	fix copypasta
+
+	Regression since commit 860883fa6fa861f808c091a3cecd03aa351d87a8 .
+
+	Change-Id: I36d26d8971891150afca060f86e73af953fab840
+
+2017-12-28  David Tardon  <dtardon@redhat.com>  [713bf6adc28bf34fa308e3139e8cb2c6bb462ba0]
+
+	avoid unnecessary copying
+
+	Change-Id: I39c19a1782ab99b64c873f8352833217e0e06f13
+
+2017-12-28  David Tardon  <dtardon@redhat.com>  [5409761baa20c34286620adcf23d2388ea40cc93]
+
+	tdf#89393 handle multiple paragraphs in cell correctly
+
+	Change-Id: If621c41aaa624ed1a61e8e659a2326efb66a2eba
+
+2017-12-28  David Tardon  <dtardon@redhat.com>  [1964f1b56f26b902a54f3b499f44a9c5dadfc808]
+
+	stop after processing all cells
+
+	Change-Id: Ic0df0ed2d6773d4be74aca3d7b6b64664fe8d73e
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [bbad69894708f6718ee454443e1189d276cdd73d]
+
+	one def. of M_PI is enough
+
+	Change-Id: I8d6a4bfcca970dc0bd906f5e349ffaca25b96f96
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [7b3b5a1c3c2b2dd95092fdac51e1a4a5cab8fbc9]
+
+	sort includes
+
+	Change-Id: I3059e2d765e49744322f3774aa31821189745e37
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [3ddacc3bcf83ac73d3288d1caa3f6f25579e1df1]
+
+	suppress another GCC 7 fallthrough warning
+
+	Change-Id: Id8da48108116113bba3714b7c2864e200e0ec21a
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [3e543ad2ecdd91f8259330b2a47a5f3d242dabe0]
+
+	print debug messages to stderr
+
+	Change-Id: I61870aba499887eb69de3f932a60537ba15c53bf
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [a5f8b6a26736874de1f8c88c0bba76d862e05b0c]
+
+	suppress GCC 7 fallthrough warnings
+
+	Change-Id: I2bf8d7c5d1b795fec06a5eb397c7be5bd6c8e580
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [19b150475fcb45678cbc8ce1620efa53d9bf85d7]
+
+	drop verbose debug
+
+	Change-Id: I4fdc7375e12427884467c4bdeb983ed5feaac1a3
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [79857494758cd3a56cb592002cfb61be98518b38]
+
+	replace manual def. of int types by boost
+
+	Change-Id: I3d47ea0c9061f47ffc2a87444fb2d09e94e44aef
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [037cd557de5dad40a2ab90de68661f516e29a6c0]
+
+	rename include guards to avoid use of __
+
+	Change-Id: I91bc5c8405165085e7c69ab8cf372bf7c785bf5b
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [af8c02038bddfa1a20b1d67093d6a4a919da8388]
+
+	use C++11 syntax to disable copying
+
+	Change-Id: Ie6433cff226b72706c915b2070767d72e94d40ff
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [68e26d64d12f5239e8c71f723f4058c64afe9234]
+
+	remove pointless initializator
+
+	Change-Id: Id48a8db1103cbfd69f806976621cdc8cc79c3747
+
+2017-12-27  David Tardon  <dtardon@redhat.com>  [1004d5a21a121bde7ca89d0e18968512fc12137e]
+
+	never call shared_from_this on not fully init-ed object
+
+	Fixes regression since commit bbe7f806b95ef427153ba18bff80e674b1704ae5
+	"replace dumb pointers by smart ones".
+
+	Change-Id: Ie0dd277bc55347bb1ae5a59ccbeaffaa5ce6772a
+
+2017-11-28  Miklos Vajna  <vmiklos@collabora.co.uk>  [6990552c358226fdcb7c714a0c4e00b8b8124df7]
+
+	MSPUBParser: reduce scope of shape width/height
+
+	They were write-only in the table case.
+
+	Change-Id: I10d480e9c621fd9dd6c4f1b2893f8dc9d9e955df
+
+2017-11-07  David Tardon  <dtardon@redhat.com>  [e0def2a0eed45d6b201c2c45bcfff69a06077253]
+
+	use enum value instead of cast
+
+	Change-Id: I5d40eefba65534a4290461fb21058965d62c2e48
+
+2017-11-07  Miklos Vajna  <vmiklos@collabora.co.uk>  [66bed1c2e93f606f51eacfe0f52b749c611408de]
+
+	Use auto when declaring iterators and when initializing with a cast
+
+	Change-Id: Ib5465f37b7302d01139f209013e6ea22c6fcdeb6
+
+2017-10-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ecff3c33df4bdbf525aa5227a36e6a20bedc4993]
+
+	doxygen -u
+
+	Change-Id: If1d88d56e527873e5587ba78f7fc80e64cdeb0c2
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [52dc03be45f8724d654029bdd2f0269fbb8d29d5]
+
+	drop outdated MSVC project files
+
+	Change-Id: I88b977eb42e30dee330cfe07a6eff03f84d79913
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [68d00f70c6ad2cc61b5106feb09d448ea5a4ffcb]
+
+	rely on pkg-config to detect zlib
+
+	Change-Id: Iad145787e0fc3258859ead3efc0dd69e804ac5cb
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [7511392e07409d97b876c0ff68c1f43cac0720d2]
+
+	drop :: prefix
+
+	Change-Id: I07695f5d877422e109176563dba8cd1b3ffd6621
+
+2017-10-02  David Tardon  <dtardon@redhat.com>  [ac0a548902be9d7c4d4662d64bfcf0d018ada3dc]
+
+	ofz#2825 avoid signed integer overflow
+
+	Change-Id: Id075e90ed5c4dca1ba14ffb01626d488414e4576
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [9eaae9f46390d65726517a8f13f6952e8d696ecd]
+
+	avoid output from fuzzer
+
+	Change-Id: Ifb5ca5822c031f6613a07bcd27ea6bf21841ca90
+
+2017-09-10  Miklos Vajna  <vmiklos@collabora.co.uk>  [dc02413337534f2ee5d403fdd1b8e91395596bc1]
+
+	m4: MSVC defines __cplusplus as 199711L still
+
+	See e.g.
+	<https://stackoverflow.com/questions/37503029/cplusplus-is-equal-to-199711-in-msvc-does-it-support-c11>,
+	on MSVC we can't depend on the value of __cplusplus, since that one is a
+	too low value, even if everything else works fine.
+
+2017-09-08  David Tardon  <dtardon@redhat.com>  [e0e504e866a875d77eacf7f4e42a2c9da13b2993]
+
+	assume modern enough ICU is available
+
+	Change-Id: I89e778d035103b2d5c60f80f379406d3ca391722
+
+2017-09-07  Miklos Vajna  <vmiklos@collabora.co.uk>  [3ac90c42f722af561596201753f8907ce3856775]
+
+	Convert explicit for loops to range-based ones where possible
+
+	This is most useful in libmspub::MSPUBMetaData::readPropertySetStream()
+	to avoid repeating ourselves.
+
+	Change-Id: Iff23ff28b8f0959a8b552d17d6c9a6912221d4bf
+
+2017-09-06  Miklos Vajna  <vmiklos@collabora.co.uk>  [c99e38590c61677ea7c325e86bd161a984d6644d]
+
+	Convert 0 to nullptr where it's used as a pointer value
+
+	To make the code easier to read, because this means the remaining zeros
+	all mean numbers.
+
+	Change-Id: Ibced46aa923b95d500c00a8a90bd4bd3f3b0e966
+
+2017-09-05  Miklos Vajna  <vmiklos@collabora.co.uk>  [a4424c069c10a0ab2fcbb6ae45dce3884a02ae3f]
+
+	Mark overriding member functions as 'override'
+
+	This does not affect the generated code (API or ABI), but:
+
+	1) Makes sure that in case the signature of one of these functions would
+	change by accident, the build breaks as the function no longer overrides
+	a base function.
+
+	2) Makes the code readable by explicitly marking all overriding
+	functions as 'override', where previously the reader had to read the
+	interface of the base class(es) as well to find out if the function is
+	virtual or not.
+
+	3) Since 'override' implies 'virtual', remove the 'virtual' keyword
+	where 'override' is present.
+
+	Change-Id: I1acf5e9252667a7f00a0b1f9ebd0ea383c91b352
+
+2017-07-29  David Tardon  <dtardon@redhat.com>  [77655b7e8dfd05669c3bc1c691a882fa45251cf5]
+
+	use vector::data()
+
+	Change-Id: I8ff2210e36df47c3fcc34a2357425668d6bbfb03
+
+2017-07-29  David Tardon  <dtardon@redhat.com>  [3199b7fa60d678651f2359288e7320706262731e]
+
+	do not append UTF-8 string by code units
+
+	Change-Id: I7b8f01fb875336d7d736cf24553fbb82e44fa5ec
+
+2017-05-14  Julien Nabet  <serval2412@yahoo.fr>  [8baa3df846f4f0005ce1c33fa932097593c07abd]
+
+	cppcheck: Function 'getNewFill' argument order different
+
+	Change-Id: Iabd78cc6ec32b8f14c08e000190443f8fa298d46
+
+2017-05-09  David Tardon  <dtardon@redhat.com>  [860883fa6fa861f808c091a3cecd03aa351d87a8]
+
+	use existing conv. functions
+
+	Change-Id: Ia2f5ab36ae42321771fd43e77b96b5a0b9452412
+
+2017-05-09  David Tardon  <dtardon@redhat.com>  [b14004f95982560820f63a44b18d99ff64438f64]
+
+	ofz#1357 avoid integer overflow
+
+	Change-Id: I60b2118c0fad45c3bba2006f60636f20bb95eaf0
+
+2017-05-02  David Tardon  <dtardon@redhat.com>  [fcfdbdf6d0481e8c709f8033181e8da09142cff9]
+
+	ofz#1004 fix signed integer overflow
+
+	Change-Id: I2cb4414464fe62c2b88b6cdcda3a9ba52cf82800
+
+2017-05-02  David Tardon  <dtardon@redhat.com>  [6a7bc865eac08ab145b15e504b931e040700015e]
+
+	ofz#1288 fix signed integer overflow
+
+	Change-Id: I282a6c1b1c5d4ce95d73e6bc59c4e5be574f0802
+
+2017-04-23  David Tardon  <dtardon@redhat.com>  [bbe7f806b95ef427153ba18bff80e674b1704ae5]
+
+	replace dumb pointers by smart ones
+
+	Change-Id: I9e70f71e67aff4d8ee5ffa1f2024d20686fea222
+
+2017-04-23  David Tardon  <dtardon@redhat.com>  [8ff2475100ad7f46835fadc04941902c7d9027a8]
+
+	replace dumb pointers by smart ones
+
+	Change-Id: I1490bee34ce0ab9f1a9777b46753b1e5cba5adad
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [9af2873bc114dd81179c580fa4c5993ddbcc45c5]
+
+	drop forgotten source file
+
+	Change-Id: I723886aeb318454c40cf6fde77d1bc95fb6ef8a3
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [1182df1076b8f892a18e3c5bb3a3f3dd6ebce24f]
+
+	boost::bind -> std::bind
+
+	Change-Id: Id2fe9b3760add82fa7f13cb00ab0bc1ba5ab4afb
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [befcab63e585f9f5d47cbef7858c349ae448c99f]
+
+	boost::function -> std::function
+
+	Change-Id: Iad04fb566ab9de78c329f6feec241e8c7e18fad1
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [de08cfc104f269a53983cbaf56e55d272bc94047]
+
+	boost::shared_ptr -> std::shared_ptr
+
+	Change-Id: I6398764b34b3b2d52bbd2251d7945f0d0341423e
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [3761bb69fb2e316083785de5134d5a4c111796a0]
+
+	boost::scoped_ptr -> std::unique_ptr
+
+	Change-Id: I62a7d4113c33ab909dd957fb9d8cbafdc9a5f19d
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [ce070c6f73307b9db5b63ce791fec2f05fa87eef]
+
+	switch to C++11
+
+	Change-Id: I049fc4bf37667192b0ae997ad150cde3632d8df3
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [bc636751ef3209d4a80129ee5c2467a6646959eb]
+
+	ignore tags files
+
+	Change-Id: I83388f464a6a935b82fa76f676d1eebddf5e590c
+
+2017-04-12  David Tardon  <dtardon@redhat.com>  [8f569932988c0ee5a163b15cb38516f87c2bfafb]
+
+	only ignore generated files in m4
+
+	Change-Id: Ibb9e5bf67157a0a5cb3989ed4e0e36027f702fb0
+
+2017-04-08  David Tardon  <dtardon@redhat.com>  [3f26e96cad0ee4aac1e3d56d0b1e39b9c233c0c6]
+
+	ofz#1003: try to fix use of temp. var. after its stack scope
+
+	I think this is a bug in either ASAN/clang or in boost, but it is no big
+	deal to copy the coord instead of taking a ref, so let's try if this
+	helps to workaround the problem...
+
+	Change-Id: If5c1ed4aa4ed3c7d745cb501839f1d0ec0f3990c
+
+2017-04-02  David Tardon  <dtardon@redhat.com>  [c6de50a17e7636c20bef03e7336f9782c8fc3850]
+
+	WaE: this statement may fall through
+
+	Change-Id: I9530e1d24ee589af1f72728ea9b045e29cacf7c7
+
+2017-03-30  David Tardon  <dtardon@redhat.com>  [6fda5db6fa456967cf1492eb9ffecc7e0b8be4f2]
+
+	pick better target
+
+	Change-Id: I519c74267d75b755dc153c4ab5ea87228efecef9
+
+2017-03-30  David Tardon  <dtardon@redhat.com>  [c1c56f8b09a79a07053bde094b42d1d86c905dd3]
+
+	fix copypasta
+
+	Change-Id: Ie878895fb46dbe9848aefb1eea69b07411cd7392
+
+2017-03-30  David Tardon  <dtardon@redhat.com>  [e67e8d82f434e563ba7924293b8ae47a99e00397]
+
+	fuzzers are disabled by default
+
+	Change-Id: Ie0157c540c21a8c61dc5ce9122cfd0371f846eb4
+
+2017-03-29  David Tardon  <dtardon@redhat.com>  [635804229e087fc560925ba65234b3d6ce3a999a]
+
+	handle all possible zlib error codes
+
+	Change-Id: If6c91d92aa7716abb90f97beba6a686fffd5ddcb
+
+2017-03-29  David Tardon  <dtardon@redhat.com>  [8cd82e1a125a50d534eb5792be9d72ab35f5f7eb]
+
+	avoid memory leak
+
+	Change-Id: If9ad7d3b68222b3729d9180423cc2dfe1579229a
+
+2017-03-29  David Tardon  <dtardon@redhat.com>  [79ef317f2a2ed73723c685dff61437b908779f9f]
+
+	astyle
+
+	Change-Id: I1ee2f184961cc2350acc47ea13bbc2aec4f0f35f
+
+2017-03-29  David Tardon  <dtardon@redhat.com>  [4fcf4c65e9a9c059ae1664c16ccf0a848a5d1b00]
+
+	avoid leak even if an exception is thrown
+
+	Change-Id: Ia1e798defd622cb19b3abaab1bd2ee7a512fc486
+
+2017-03-16  dennisroczek  <dennisroczek@libreoffice.org>  [2e62e1208b6259a2f4b4b69a4a48c9b4f646d55b]
+
+	fix typo: "the the" --> the
+
+	Change-Id: I6e201afc023ec8e9ac7cd28810dde3c676f2ebc0
+	Reviewed-on: https://gerrit.libreoffice.org/35170
+	Reviewed-by: Julien Nabet <serval2412@yahoo.fr>
+	Tested-by: Julien Nabet <serval2412@yahoo.fr>
+
+2017-03-14  David Tardon  <dtardon@redhat.com>  [e62697efe1efbb34f216be7929eabf77feb17f0f]
+
+	rename
+
+	Change-Id: I5bfd248db6e93a8c7d3f1a23b21b38919623e1c3
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [5655d4ec140544d4144e6b7e144c98d6351b8471]
+
+	avoid memory leak
+
+	Change-Id: Iae40d0f17597997d4c44eff0745ca7bbd895856e
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [387fc64586e289ccd972bd6710c4c368b497ef35]
+
+	the condition is checked in parent makefile
+
+	Change-Id: I536dc323280f9ac743850e92ce010b1f06e35c3e
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [b52e8163973198459fea6e0c73fb16aec66308f3]
+
+	sources of bin targets are distributed automatically
+
+	Change-Id: I47cdb009f08f951b8662d7735bbeefbda361e93f
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [684eeaaa4855269057d08295a70e5c64f08c91c1]
+
+	do not hardcode relative path to the lib
+
+	Change-Id: I43f826b9064f270ed825cba265480ebb760b4cd5
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [361e7964fd6fd93884663cb00c1bc1731f91c576]
+
+	update configure summary
+
+	Change-Id: I2709e85ab0ff9059af51fadc33f8ecffc9e3c00d
+
+2017-03-13  David Tardon  <dtardon@redhat.com>  [da0ac88039262a6dc7a2bbee329e37a7a23e39f6]
+
+	create a fuzzing driver for oss-fuzz
+
+	Change-Id: I7636a01885615c109865da923b03682c77e3220d
+
+2017-03-12  dennisroczek  <dennisroczek@libreoffice.org>  [9817b5c88c29922eedf61590429b69b55c940802]
+
+	fix typo: usefull --> useful
+
+	Change-Id: Id284e438734fedd3b725c4587dd8708a7057888e
+	Reviewed-on: https://gerrit.libreoffice.org/34998
+	Reviewed-by: Adolfo Jayme Barrientos <fitojb@ubuntu.com>
+	Tested-by: Adolfo Jayme Barrientos <fitojb@ubuntu.com>
+
+2016-02-16  David Tardon  <dtardon@redhat.com>  [6d04330d0651829d6d926871e5bf8309d392a9da]
+
+	librevenge-stream is not really needed
+
+	Change-Id: I4652481a10da8bd28258a67f540d8c524678392d
+
+2016-02-06  David Tardon  <dtardon@redhat.com>  [3e8bd20df94896cb4503188a218423340384fb40]
+
+	update README
+
+	Change-Id: I5b7c8f3902e67547fcab4adbc68c3ff3cf8bc8a9
+
+2016-02-06  David Tardon  <dtardon@redhat.com>  [e625c6e60185100438edcb06566a5f8a2a137deb]
+
+	add missing include
+
+	Change-Id: Ibd003515271ad6211189e12b85eeddd980319770
+
+2016-02-06  David Tardon  <dtardon@redhat.com>  [39a9a9ecea325c66fb9d5f503848553ac0e14dcf]
+
+	afl: avoid out of bounds access to vector
+
+	Change-Id: I51fdad6cca395bb5aadc916ef452ee020f666607
+
+2016-02-06  Miklos Vajna  <vmiklos@collabora.co.uk>  [0a83689e2f13d0bb584fb004c9065463271ac9e4]
+
+	need space for the terminating null-character
+
+	Change-Id: Ie9cab1687dd3187819ec8e3e89b3e9355da9b255
+
+2016-02-06  David Tardon  <dtardon@redhat.com>  [8eaa9d24d235b1390402c232bed49e81ab2d40f4]
+
+	C++11 syntax is not allowed
+
+	Change-Id: Ia705f789b3f9d600b03d25db90972a315e782302
+
+2016-02-06  David Tardon  <dtardon@redhat.com>  [207e6da1240c4255d2b4c5c28d405ace84ed042f]
+
+	extract more metadata
+
+	Template, language, company and category metadata are extracted from
+	MSPUB files. Company and category are set as custom properties.
+
+	Change-Id: Ic14bfa11a2a8253c79dd4c4466afc7f6b2ce4ea9
+
+2015-12-26  David Tardon  <dtardon@redhat.com>  [ef9e59b64f3cb168459c2625da7582a4372df7ec]
+
+	make --help output more help2man-friendly
+
+	Change-Id: I58c2eae1b449370e6f2a286b84c8b423fc2c8d42
+
+2015-12-26  David Tardon  <dtardon@redhat.com>  [85308f9016c7c19fb0e80dc07b8184fe56cf5a31]
+
+	simplify dist. and inst. of headers
+
+	Change-Id: I453df50bad6be0ca366b281f11742bfa6dad68ce
+
+2015-12-26  David Tardon  <dtardon@redhat.com>  [376db4e42b2aec4ada22e3b95eebd5f00d17081e]
+
+	update CREDITS to reflect reality
+
+	Change-Id: I0223ebdc4ef03732fe9826b8443143cc545e1d8a
+
+2015-08-18  David Tardon  <dtardon@redhat.com>  [98de8427131ba3203f38739a86c9af6e81367644]
+
+	afl: avoid stack overflow
+
+	Change-Id: I920e3ef946e415aec3554fbb852d95f596e31405
+
+2015-08-18  David Tardon  <dtardon@redhat.com>  [1023378fcd0974c38d23fce906d8552406dbe599]
+
+	fix brain fart
+
+	Change-Id: Ifa0015945255b2a6e2c9da25b89b0b4648465290
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [9f5a58d13f14717b8d7f366bb525bc91f01bd6b4]
+
+	avoid out-of-bounds access
+
+	Change-Id: I9e880dc3bdbf91f1d0d7bbca68d6188c6cc6da4e
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [1da6f0a9782dca04e902ab5115116d74a2941199]
+
+	avoid excessive allocation
+
+	Change-Id: Ia664a2d348022657376d5632d1fb087d656f2be2
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [b3b438e4ab2536fdb65910c1ebee3d2a8c2a627c]
+
+	avoid excessive allocation
+
+	Change-Id: Ibb7eaaf77d5f80510de81de217f8cb63682d9dce
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [998c647c9002cc2e364cf862f2ff4dab540e6649]
+
+	avoid excessive allocation
+
+	Change-Id: Ib136b3ad0bbdc75697dac0357a1afd17751cbbfd
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [06e845f157abb9dd207652e6553cab4ec6cef92d]
+
+	keep the stream size around
+
+	Change-Id: Ib5e127b445233ea7b0c499afedd4295edfad33d2
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [cb8deab6a1807a105bc9ef127a86c8c9047d4161]
+
+	astyle
+
+	Change-Id: I73cdd7f09452224698d8844ae2529e85daa8f980
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [1f8c762956ed1afc8021b2e0d92c0f54549e2299]
+
+	add make astyle target
+
+	Change-Id: I4b572644e1b802661bf40b8fbb2f6708ce9bb9d9
+
+2015-02-16  Richard PALO  <richard@NetBSD.org>  [db5a1e5b20463fc5704c53aa679e17e875314da2]
+
+	use std::pow in order to avoid compile time errors like: error: call of overloaded 'pow(int, uint16_t&)' is ambiguous
+
+	as seen on SunOS 5.11
+
+	Change-Id: I0e0bcdf4c50f9c8d1e8f088193eac82247178e80
+	Reviewed-on: https://gerrit.libreoffice.org/14478
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2015-02-13  David Tardon  <dtardon@redhat.com>  [b5bab87065d029d8e1f7ddb214619511e2d1e23d]
+
+	tdf#89061 parse table row/column sizes
+
+	Change-Id: I5471eac69e89eec51018572ff3b541e6953c43be
+
+2015-02-02  David Tardon  <dtardon@redhat.com>  [94bf061ac508a9fcd7921f56c5100b03c5729608]
+
+	remove bashism
+
+	Change-Id: I524ffd52b4b5cdace12590fd7879a221d3e9ebd9
+
+2015-01-06  David Tardon  <dtardon@redhat.com>  [84aa593e58a2a3cc28e6e36086d0c99f59e42757]
+
+	why is this variable static?
+
+	Change-Id: Ib3108e1f4a0a4caa2df9685ee58a9ea6e7f7634e
+
+2015-01-06  David Tardon  <dtardon@redhat.com>  [4a642d5ab5d9822168ff49580e1349f422ef4481]
+
+	workaround build error on some old 32-bit systems
+
+	"error: integer constant is too large for 'long' type"
+
+	Change-Id: I7f6a169059ca3dcd4d9977c6af1522799f1df051
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [fc4fdd7b1ab4278d14c88946f2c837d7eb4d880f]
+
+	flush remaining text before checking spans
+
+	Change-Id: I6938b0b13959a3ee83cfecae728c0a1a7baf531f
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [b42a9c54d0fceec246dd4fef8679898efd611d60]
+
+	coverity#1261355 using invalid iterator
+
+	Change-Id: I9dfdfa89e2e1d895ea4d669a2dad480c5a8966ad
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [d0e7664ffef9bafce5664948f03118fda3810002]
+
+	prepare for a release
+
+	Change-Id: I5569201cb5a41640ee786d3e0a7814c3e0e907d6
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [7d50db7ceeda663451ef2fe6cbc9ea0d25668e1e]
+
+	fix parsing of escher values
+
+	The list of (ID, value) pairs is terminated by ID == 0 without a value.
+	So, the shortest possible record has length 8: 2 byte ID, followed by 4
+	byte value, followed by 2 byte terminator ID.
+
+	Change-Id: I4501e42164b4376f16feca21e32221a4084f22f4
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [a5aa054c0996cc4e8c428a88c7f14c18e4e4e57e]
+
+	import metadata
+
+	Change-Id: I64dc77ef7f2e12a5d9f2358b1ebaa5e593282414
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [09a84ccf477902196fc94c71f9bc244e2e28ae5c]
+
+	keep the sources list sorted
+
+	Change-Id: I61061f8f43be40cc3f886a29a74c31dc39d4893f
+
+2014-12-30  David Tardon  <dtardon@redhat.com>  [3b6a71216cab7172b947dbb6946f8dcb8b81792d]
+
+	fix warning
+
+	Change-Id: I77492d801c43d178be210323ef1dafc7eefdacb6
+
+2014-12-29  David Tardon  <dtardon@redhat.com>  [630ed6296456fe14c08a25dda703a221280a00c2]
+
+	fix parsing of docs with multiple tables
+
+	Change-Id: I4f8141a6fe71db283b698b67819e5ed00aed3860
+
+2014-12-29  David Tardon  <dtardon@redhat.com>  [f2062c912b0deb340cb7d4c55d027e7d26cf0f59]
+
+	astyle
+
+	Change-Id: Ifd955b803ca0ab6b1c3fb93c947320d846c537ed
+
+2014-12-29  David Tardon  <dtardon@redhat.com>  [b3ac66dd7a7a4d9d1ed92ffc34a456fef695127e]
+
+	cells are not always saved in L->R T->B order
+
+	As an additional bonus, this simplifies the output loop.
+
+	Change-Id: I2ae1eab52d3681c02e790af950c82a7f01d3aa11
+
+2014-12-29  David Tardon  <dtardon@redhat.com>  [04b14a279a51a1ab88e304cabf776a060e1f19b5]
+
+	fix debug build
+
+	Change-Id: I651c495d21f4c6869bb0ecb01a7b6f02f3dcbf3f
+
+2014-12-28  David Tardon  <dtardon@redhat.com>  [3b6efdb66e92c4d3d93daa56930ead86bf4fb96a]
+
+	handle merged cells
+
+	Change-Id: I32c416d89e18d780d852a900f16a35d14531c209
+
+2014-12-28  David Tardon  <dtardon@redhat.com>  [82f18199d17bb4da46b2728f7dfc477eac984bc2]
+
+	BIPU handling of tables
+
+	Change-Id: I99b127f651c20d7024a3f7db881b386424f334d0
+
+2014-12-28  David Tardon  <dtardon@redhat.com>  [58ad1f151731706d450b64d00e1ce12653396cf6]
+
+	handle text content of a table
+
+	Change-Id: I7eec32aeff3b6ac109b6abae9fcb61f46efb27bb
+
+2014-12-26  David Tardon  <dtardon@redhat.com>  [7e994d4632e382df6aeccdab0f3408c8d3dc112b]
+
+	drop trailing 0 when reading embedded font name
+
+	Change-Id: Iaf8a0f9d8a38c9316f9f1e411a8f9d0f4e89e252
+
+2014-12-26  David Tardon  <dtardon@redhat.com>  [b99d016d1e43d9ef99c6f3f94a345a189212a117]
+
+	simplify this
+
+	Change-Id: I6a39f76a0019d057b20a4abb29479754ad622b39
+
+2014-12-26  David Tardon  <dtardon@redhat.com>  [525d9d714be08629ac8c70bf415f2231c4f910b3]
+
+	replace double negation by bool()
+
+	Change-Id: Ibd72d22c86e8960dd3553fa1406098c8138dae36
+
+2014-12-26  David Tardon  <dtardon@redhat.com>  [cc3724d73551b23dc370f865652c14a739e45a00]
+
+	handle embedded fonts
+
+	Change-Id: Ifeb92312aaadf17284c47c25109737cf7ffb6024
+
+2014-12-23  David Tardon  <dtardon@redhat.com>  [567788c7a99abeb116dd202dbbe1a04eb7a05c2a]
+
+	afl: avoid infinite loop
+
+	Change-Id: I13ca72e1328c38f9c6b8da5c5e11b6944d5863a6
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [0ab2f4869b5d5f43a3793ae7e556bd5825609552]
+
+	do not dereference past-the-end iterator
+
+	Change-Id: I93b300e79163c9fb6a6f32f937c75e6265f1c5b7
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [b33edc1675cec963340466627973fba070d2747d]
+
+	do not dereference past-the-end iterator
+
+	Change-Id: Icef6e8a324f85c51c27dd03a03ca1c37e4b01bc1
+
+2014-11-24  David Tardon  <dtardon@redhat.com>  [616f5070061e28c54cbb513859141e02f4fd5dc6]
+
+	add compile script to .gitignore
+
+	Change-Id: I543c0db6c0d00e5c68fac05031a99204dd716d4b
+
+2014-11-24  David Tardon  <dtardon@redhat.com>  [c5c20a694baa5629ddb65ea37f19da89411887fe]
+
+	only export public symbols
+
+
+2014-07-29  David Tardon  <dtardon@redhat.com>  [0909d5efcdc948ab455e14f718114c53fd8f52bc]
+
+	check input
+
+	Change-Id: I117ffe49fd6be34b07b094f0671244500ab44a53
+
+2014-07-01  David Tardon  <dtardon@redhat.com>  [5e582134513e0250c544c4648e305c7d2b2cf829]
+
+	prepare for a release
+
+	Change-Id: Ib9639819752e592930fe304809558ab20923c1d5
+
+2014-07-01  David Tardon  <dtardon@redhat.com>  [5a03f9a1aaf8e9255a1c6a7fa7015bde0eecf0dd]
+
+	put all symbols into namespace libmspub
+
+	Change-Id: I0a918d738288838f059f7606bd00979cbe4cc99a
+
+2014-07-01  David Tardon  <dtardon@redhat.com>  [50e45a89147807dadb301cc7b6ba934806ae269a]
+
+	fdo#80661 clash with a global symbol from libreoffice
+
+	Change-Id: I7d556a5a207b055342a0b369cc0cb800b60014df
+
+2014-06-02  David Tardon  <dtardon@redhat.com>  [3cbc8206090b1843db5a6838d159d6aad67c486e]
+
+	need librevenge 0.0.1 now
+
+	Change-Id: I957ff9edb3c019b489fdcfed532c25694ba6c6e4
+
+2014-06-02  David Tardon  <dtardon@redhat.com>  [e0da5267d2a86360731f848130ac500419fac0fd]
+
+	coverity#1132886 missing break in switch
+
+	Change-Id: I93facc400851d4ec698769a4bc665859b0fa0245
+
+2014-06-02  David Tardon  <dtardon@redhat.com>  [0af593e3b4bdfcc016a54acd53c56ed303ef476d]
+
+	const_cast is no longer necessary
+
+	Change-Id: I8573498decad389693da324f7e3132e91fc71bb8
+
+2014-06-02  David Tardon  <dtardon@redhat.com>  [6fb847a013c351af04125b4c7e5a9aaab861afde]
+
+	coverity#1219715 dereference after null check
+
+	Change-Id: I36ddbef50da52dcf1e22b47d94a759606fd818a2
+
+2014-05-23  David Tardon  <dtardon@redhat.com>  [d731971eba5bac0859a7be23249842d1ff572f7a]
+
+	prepare for a release
+
+	Change-Id: I0a52eb61623ee9da6912930136071e8aacc17786
+
+2014-04-16  David Tardon  <dtardon@redhat.com>  [76d5e65866c042b54b70e64f230b9fa66e24a0a2]
+
+	add requires for other projects
+
+	Change-Id: Id25d39aa06cddb06783a30f4ad961e1618c8275e
+
+2014-04-16  David Tardon  <dtardon@redhat.com>  [53233cdbfeba8fbb7914f1825b100681f64e716f]
+
+	require librevenge-stream too
+
+	Change-Id: I023a16c7d7abaa3cd68c047b32c8c6163e0fe36f
+
+2014-01-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f65e2bc75d247044d8def59ced35cf1f63da71f3]
+
+	With agreement of all contributors, simplifying licensing to MPL2
+
+	Change-Id: Ie051167443758c7db08072d5c322d38ac5ddc56a
+
+2013-12-18  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [30cead30b424282664a70f28636ab290ac7267fb]
+
+	Export only needed stuff on Windows
+
+	Change-Id: I276cdce38ad9b2a8a62ded67f7d34a5bca6a698f
+
+2013-12-11  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [d452d5853bd3f2c94f9f796d4f2e59d211dbbfee]
+
+	Re-astyle
+
+	Change-Id: I07970ababe907fff2595f605abebb91fbd10db85
+
+2013-12-11  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [8cb37e2404b3fe621af0ab5f36bbb2754d30def0]
+
+	Allow equal identing of functions
+
+
+2013-12-03  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3e9dfdccfa58447677d8e6404933229282bd6ae4]
+
+	Separate tabs, spaces and line-breaks from text
+
+	Change-Id: I11a1405914fcc38400c5ce28cb37e4330e72b0aa
+
+2013-12-03  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [614a0f673bb0b74265992e53595d5b7013de49c0]
+
+	Add startDocument and endDocument calls
+
+	Change-Id: Iebf9a13d01f2d1e167345c6339fe3b97fc2b4381
+
+2013-11-30  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [78cfbdf6bd95ba24f5f8990b28fabbe5aa9cbad5]
+
+	Allow pub2raw output callgraph
+
+	Change-Id: I03482201ff551ddb5849cc29f844ba8271060485
+
+2013-11-28  David Tardon  <dtardon@redhat.com>  [0f3bf67a950fd340d0a8c99f2b74817859db8733]
+
+	add options file for astyle
+
+	Change-Id: Ifa12207d6d3bde25af615b293ca1f18c839a3a2f
+
+2013-11-28  David Tardon  <dtardon@redhat.com>  [5b7bc93516950d0155bbe6b6f7124db29868c26d]
+
+	add myself to AUTHORS
+
+	Change-Id: Ied4ff9ffc5b1bfa40a62d98362a19abf68716681
+
+2013-11-28  David Tardon  <dtardon@redhat.com>  [a4b471c30accd9f7a9236fba8a3f77e72607a748]
+
+	document the current astyle settings
+
+	Change-Id: I58817abf4237923cff870a52151c899694262e35
+
+2013-11-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [dc74c1d6918ad6531daf6c1bd8e0c3fcd84b7155]
+
+	astyle -HU -A1 -k3 -y -n -s2 -r \*.cpp \*.h
+
+	Change-Id: I58b1148474af8440672d623385440cfee275f472
+
+2013-11-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ee40d82a8a93584b3cb3dce17de5e22ecbc52aea]
+
+	drawPoly*: vertices -> "svg:points"
+
+	Change-Id: Ic1a37ae6c2cf63fde1acd943a27a4ac668dd45b9
+
+2013-11-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ca3f8827c850268cebf6cdcf37048ea809bf0398]
+
+	Fold in the gradient
+
+	Change-Id: I64d42e3a485af5933aec1e9441fcc46600db2a4e
+
+2013-11-21  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [cb229d42dc762d7d3f43a59e43d24afd773d5a2b]
+
+	Fold tabStops into the propList
+
+	Change-Id: Iab436fa599b6836a8a8f7659cd18ed38cbd3911d
+
+2013-11-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [4a37910aafea0a69be1377045239244d1ce0f7e0]
+
+	Astyle
+
+	Change-Id: Iefe93634d0573d57a95c1c0b96848db2f4ec2b8c
+
+2013-11-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [8f538353e8a2bc698fa7fb793737950a6f46afb0]
+
+	Fold paths into property lists
+
+	Change-Id: Ic69f12aa3be7cea1047fd481b913df6ab25974f3
+
+2013-11-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [c3e812fd9e15e41ca4d1dc3ff0e438c5afa05257]
+
+	Adapt to API change in librevenge
+
+	Change-Id: I55f75085307279ab280c3645ff4ccc993615fa90
+
+2013-11-07  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1eebf9a725a30cd64c041533c8671f01d37d53db]
+
+	Make --disable-tools effective
+
+	Change-Id: Iba7371e85e1fdb17c0be5b364cbfcb9e3a5c47f9
+
+2013-11-07  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [4cfda485b13728ea31de466d986a171251e1f3fa]
+
+	Port to librevenge
+
+	Change-Id: I975b5a248bee8ce74a32bf48606a1516c0692308
+
+2013-11-03  Julien Nabet  <serval2412@yahoo.fr>  [6aa8753461a537aadd2180ebc3d98962bd2224cb]
+
+	Some cppcheck cleaning
+
+
+2013-09-03  David Tardon  <dtardon@redhat.com>  [0477515f72618f05e92108d619a0aeb67895dfe2]
+
+	add cgit/gitweb URLs to the repo
+
+	Change-Id: I9231c621faafdd2cc67f9b066254f0cff61f9170
+	Reviewed-on: https://gerrit.libreoffice.org/5778
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2013-09-03  David Tardon  <dtardon@redhat.com>  [0ec56109b2df0776b8ff0c921209a58ba655541b]
+
+	set up git-review
+
+
+2013-09-02  David Tardon  <dtardon@redhat.com>  [c78f10c2a2979008c18f33f7bf8f0238cc144089]
+
+	add README
+
+
+2013-09-02  Norbert Thiebaud  <nthiebaud@gmail.com>  [bcfdbefbef551f57f9fc9a5bf5f53bb7f7a85ab1]
+
+	add automatic git hook setting in autogen.sh
+
+	Change-Id: I95eb02dc2d347337d7b85f85d6459353278fb137
+	Reviewed-on: https://gerrit.libreoffice.org/5749
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2013-07-26  David Tardon  <dtardon@redhat.com>  [938e918d3a02dd2b1f741ca65c70c61e9e8bf7bb]
+
+	drop pragmas disabling warnings
+
+	If there is (still) a problem, I would rather fix it than hide it.
+
+2013-07-06  David Tardon  <dtardon@redhat.com>  [7a6889b490ca80db4115612b9e441d698374cac0]
+
+	astyle
+
+
+2013-07-06  David Tardon  <dtardon@redhat.com>  [fad540e1d43c95b7173c8ddb7bb81e4ab5c9f21a]
+
+	the extra variable is not needed
+
+
+2013-07-06  David Tardon  <dtardon@redhat.com>  [d0a51bca47dd4b4c23c17dcf332f9f3831dd049f]
+
+	only compute image type once
+
+
+2013-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [53293cd3472444cbe87ab5c22ea4b81b18d53896]
+
+	Adapting doxygen to the new layout
+
+
+2013-05-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [83713ac1c8b614fb28a65a7163a6123acf3918a7]
+
+	Bumping version to 0.0.6
+
+
+2013-05-13  Franz Schmid  <franz@linux-hp-i7.site>  [8f69cc15162202efb27cb53cd8a40324122fa200]
+
+	Corrected reading of shadow properties.
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [f797896cd97ea73a234d41aad2c44466e9f86f72]
+
+	avoid out-of-bounds access into vector
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [77f677c9d37adff32e7049adab545c09d6c38bbd]
+
+	return early if there are no chars to append
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [7a334723b99797c3732e58d9e8c3b0f8cb5e97b6]
+
+	return immediately if there's nothing to read
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [662925201db2b66a8ce96cadd693acd35c27d87d]
+
+	ignore fonts with 0-length name
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [624622b0ab650fa8a7381de305730f31edbb3cf8]
+
+	do not let MSPUBDocument::parse throw
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [3b99673068a346ce35646336bfb99261860bcb5d]
+
+	do not crash on invalid input
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [95af3103bfed35a3aafe683b4fc33c761a2959c9]
+
+	avoid more vector index underflows
+
+
+2013-05-11  David Tardon  <dtardon@redhat.com>  [20d7c69f9efb6fdee1b08e84e07f78981b78df1a]
+
+	avoid vector index underflow
+
+
+2013-05-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [e59b81256f2d33530024b1b30e5447a4501c64b6]
+
+	Making Michael Stahl happy (second library in the row)
+
+
+2013-05-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3d6a550b7a2b1481a65373ab9acc191340375786]
+
+	Use the stream returning WPXBinaryData method rather
+
+
+2013-05-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [39e26e8805f5d7039416256a6f5b8919c2a02523]
+
+	No day without typo in git
+
+
+2013-05-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b7371ac25d7a5df50ad7c60964c98256d3a0b7b1]
+
+	Don't depend on a particular external WPXInputStream implementation
+
+
+2013-05-10  David Tardon  <dtardon@redhat.com>  [a92bbba4d1995752eb71532b5e7a24094732ede5]
+
+	rhbz#960037 drop string-based readU* functions
+
+
+2013-05-09  Franz Schmid  <franz@linux-hp-i7.site>  [c58756ed453281af92970b88ab1b8ee9432b56b2]
+
+	Brightness patch, better implementation
+
+
+2013-05-04  David Tardon  <dtardon@redhat.com>  [9c42e8be24e90dc7e3e326a9a53a445f716e414b]
+
+	coverity: avoid possible sign extension
+
+
+2013-05-02  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [54882a7c40241fad3ac62ef67c7e2752c11a0a6f]
+
+	libwpd already does this conversion, so don't dupplicate
+
+
+2013-05-01  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ad0f36d02bf8bc1cfabb4d615bb27f216ef81cec]
+
+	Some boost header sanitizing
+
+
+2013-05-01  Franz Schmid  <franz@linux-hp-i7.site>  [546bf85c66d90e14beec96d51018fdc38b0d95c2]
+
+	Added support for DropCaps letter setting and fixed column and column-gap output.
+
+
+2013-04-28  Franz Schmid  <franz@linux-hp-i7.site>  [8b3c9c61a8d1d83e4be8f2bfcd45d6f4c4487550]
+
+	Added Drop Caps to the Paragraph Styles.
+
+
+2013-04-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0a16170b1106a1a2131ddc5fdfdfa9687b2d3dda]
+
+	Some sane defaults for the build
+
+
+2013-04-24  Franz Schmid  <franz@linux-hp-i7.site>  [b4c7fe03433a0db5a625e76fa7fa81e4a41f85c6]
+
+	First Line left indent is signed not unsigned.
+
+
+2013-04-24  Franz Schmid  <franz@linux-hp-i7.site>  [826cb95f46f0853bfaec885ca2b9f8b88f036771]
+
+	Fixed crash when converting files with dashed lines to svg.
+
+
+2013-04-16  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [e5e507286213ae90072ac75fa594b80505340fdf]
+
+	Make the enum complete
+
+
+2013-04-16  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [726159305118afcad5086da0249e0e5d01479ae6]
+
+	Try to use the documentation names
+
+
+2013-04-16  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [45093bd820c2e7863aebed9b106488021a641061]
+
+	*.is_initialized() -> status
+
+
+2013-04-16  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [7cde4c70fdc966a333fe8ddc1c6c61ae759dc56c]
+
+	Revert "Added output of the dash style value as libmspub:dashstyle property"
+
+	The dashes are already handled! Reading before coding!
+
+	This reverts commit 2b840822cc91f28a8b8d5c0b1b40ddf039778f68.
+
+2013-04-15  Franz Schmid  <franz@linux-hp-i7.site>  [2b840822cc91f28a8b8d5c0b1b40ddf039778f68]
+
+	Added output of the dash style value as libmspub:dashstyle property
+
+
+2013-04-15  Franz Schmid  <franz@linux-hp-i7.site>  [7089afb7d28f3ceecb7d6d1cd5fd8b3fdfd4d7c5]
+
+	Added output of the wrap path as an svg clip path.
+
+
+2013-04-15  Franz Schmid  <franz@linux-hp-i7.site>  [1d36216453944a6f431319a28e9df279f12f0574]
+
+	Added complete multicolor gradient support and fixed pattern colors.
+
+
+2013-04-09  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0abccffca87c258e675a0b908d6a4ce69c46fac0]
+
+	Fix a typo
+
+
+2013-04-04  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [c51d3825ee97cd563a4791f2b1b43e40c5272a7f]
+
+	Astyle stuff (astyle -b -k3 -y -n -s2 -r \*.cpp \*.h)
+
+
+2013-04-04  Franz Schmid  <franz@linux-hp-i7.site>  [deb3a0df5b0aa85676bb20bf6ce026d0dc7101af]
+
+	Added parsing of more gradient types and report rotation for images.
+
+
+2013-02-18  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [d47e000d821933551c2ef4fe205f991227aa258b]
+
+	Bump version to 0.0.5
+
+
+2013-02-03  Brennan Vincent  <brennan.vincent@gmail.com>  [9d110f9105a08934f9e6343ac6c282f5808342c8]
+
+	Default to first default character style if none specified (cf: TS102911911.pub)
+
+
+2013-02-03  Brennan Vincent  <brennan.vincent@gmail.com>  [f8d56081d51a5c8284585c177aa30ad823827fc6]
+
+	Revert last commit, which is apparently broken.
+
+
+2013-02-01  Brennan Vincent  <brennan.vincent@gmail.com>  [fb7432a35aeb55634e5cf45a1f4b8d91dba8aff4]
+
+	Respect flags that determine whether to use a shape fill's properties
+
+
+2013-02-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9bdfe96d1f50a07a16ee6fff58deae4e8159efd9]
+
+	specify boost include directory too
+
+
+2013-02-01  Brennan Vincent  <brennan.vincent@gmail.com>  [0a50554fd3a155ac498f2217edfa016bbe3929bd]
+
+	Fix a mistake causing non-cropped images not to appear
+
+
+2013-02-01  Brennan Vincent  <brennan.vincent@gmail.com>  [a51d131b9196afd68e44df43b75e56fb59d43450]
+
+	pub2k2+ implement images cropped to shapes.
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [5b5ec32044798605927ae85da88f9625fcfa5e57]
+
+	no need of makefile.mk anymore
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9ae7b703255feb022ebf4e9a8360d26ab43474e5]
+
+	A bit of cleanup of build system
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [e0e306d4f5c7384c7495f340360fefa1808cb6b9]
+
+	Cleanup the project files
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [dfe38760f975d6e0591a79aba15e106ea8209d3f]
+
+	Bumping version in order not to forget later
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [99191c026c72cb54b7d9a4f176a76bd6526b42dc]
+
+	insignificant trivial whitespace change
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [895ec7d03bb31e43622b38c88a346a39bfd9f3c0]
+
+	Dist the Visual Studio 2008 and 2010 project/solution files
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [fa697ab96b0d00496f73344ea3331cc67f793d3f]
+
+	Adding Visual Studio 2010 project files
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1ac4e36eb79a25e289a00017aa3a808aad90b8d2]
+
+	Add Visual Studio 2008 project files
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [22a2dd635013709b8f73345c5dfcb6fbee037c6e]
+
+	Don't ignore useful files
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ee6fc5ae8f7fbc236dfc50ea7de2284a929f4f43]
+
+	update the VC6 projects
+
+
+2013-01-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [8e01e195d20dba9f32ee0954fd7e3374ac02f16a]
+
+	Check for icu CXXFLAGS too
+
+
+2013-01-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [be6b5a214a365dedb8351014a90604d30b3bd4ac]
+
+	Detect ICU by pkg-config first and fallback on icu-config only after
+
+
+2013-01-18  Brennan T. Vincent  <brennanv@email.arizona.edu>  [27334faa41525b7f85fd193817956d4e34390fde]
+
+	styling
+
+
+2013-01-18  Brennan T. Vincent  <brennanv@email.arizona.edu>  [7635d9ef0eaf07f3f60d0ee3f550c2c62685fedd]
+
+	Update copyright dates and author email
+
+
+2013-01-18  Brennan T. Vincent  <brennanv@email.arizona.edu>  [17f68425119bb587ca8db474beb34884511b9a12]
+
+	Autodetect character set for pre-unicode MSPUB versions (still need to test for languages other than Russian, but appears to be working)
+
+
+2013-01-17  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1f8d38e91ea3d7a90ba152560ae5c863d3cee72a]
+
+	Check for icu and set ICU_CFLAGS and ICU_LDFLAGS
+
+
+2013-01-16  Brennan T. Vincent  <brennanv@email.arizona.edu>  [fcfe59ed3b0fe2d186ff44f2a3809b97ee116639]
+
+	update to work with latest autotools
+
+
+2012-12-16  David Tardon  <dtardon@redhat.com>  [a74548fe38dffd8a6e8ae1fce787053a5d3be41d]
+
+	coverity: pass structs by const ref
+
+
+2012-10-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3d2ec8c848838f1188b91f1bbdad2bd13651185c]
+
+	Some more configurability about warnings
+
+
+2012-10-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ad45188798a0c21c95ae5d3687e1679f265a4b17]
+
+	This is libmspub-0.0.x series
+
+
+2012-08-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f9e081673acd6b8a23d533e4d64ffdded97c0c44]
+
+	Another cppcheck fix
+
+
+2012-08-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [dda6eaf5ce958117ba1b7c2b56fc7e14c07722cc]
+
+	Avoid warnings of autotools
+
+
+2012-08-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [adcefaa8f25d21270633cfac38e270395044728b]
+
+	Fix some cppcheck messages
+
+
+2012-08-29  Julien Nabet  <serval2412@yahoo.fr>  [ae3fdb9148627b62f08d68690785fc764065a57b]
+
+	Some cppcheck cleaning
+
+
+2012-08-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [6298807d48b594a63e024d19a40cfaf284fe7042]
+
+	Remove unnecessary files that nobody ever uses anyway
+
+
+2012-08-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [52b4fc986f65813618c238d0f96ddfecba70fce5]
+
+	Try to use the stdint types only when really necessary
+
+
+2012-08-22  Tor Lillqvist  <tlillqvist@suse.com>  [2b1fa4da96dc498af7d83e6189ef3876da137ffd]
+
+	Fix MSVC build
+
+	Signed-off-by: Fridrich Štrba <fridrich.strba@bluewin.ch>
+
+2012-08-21  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [cff910b8b283010564bdaf80ac063eebcadd12ae]
+
+	Fixing error: \u0000 is not a valid universal character
+
+
+2012-08-21  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [7dabcac08b743ee672090dc1a10e1880e7cfb4a4]
+
+	Bumping version for a possible release
+
+
+2012-08-19  Brennan Vincent  <brennanv@email.arizona.edu>  [2172a0e9f08b26dd27197bb668a11a9d5c769a75]
+
+	stylize
+
+
+2012-08-19  Brennan Vincent  <brennanv@email.arizona.edu>  [f40a58c5479d01a66209888a9e711cadd11dbbcd]
+
+	pub2k2+: handle a (reasonably good) subset of shadows. (now TS010354188.pub looks almost perfect)
+
+
+2012-08-19  Brennan Vincent  <brennanv@email.arizona.edu>  [a1efb8f524c447155b13dcfbfa11a175896140a6]
+
+	More in the same vein as the last commit
+
+
+2012-08-19  Brennan Vincent  <brennanv@email.arizona.edu>  [f05f62bdef9765ac68ce839b24ed76888465a9f6]
+
+	pub2k2+: A few more binary shape segment commands (deeply improves TS010354188.pub)
+
+
+2012-08-17  Brennan Vincent  <brennanv@email.arizona.edu>  [50969a51e88cb424bc9b54a8b1ef49a34b53f209]
+
+	Parse tab stops (may need to work on the API before they can be output)
+
+
+2012-08-17  Brennan Vincent  <brennanv@email.arizona.edu>  [4f5603348014922919780dbbf7b252e6d11b4863]
+
+	stylize
+
+
+2012-08-17  Brennan Vincent  <brennanv@email.arizona.edu>  [9583e2370bb848856555a75b3c744d4a4caf446c]
+
+	Fix issue with parsing embedded fonts
+
+
+2012-08-17  Brennan Vincent  <brennanv@email.arizona.edu>  [dbf8267b5df3f3c9419aedff05a633c28665818e]
+
+	parse and store embedded fonts in view of (someday) writing eot2ttf and fixing fdo#42195
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [83f57ce2247c41e915b5b749ffc0e02e8c9fe982]
+
+	stylize
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [b01c8df7fd5ed062c246c71e77b960e68cbcc531]
+
+	pub2k2+: improve handling of default paragraph styles (fixes spacing issues in TS030002173.pub)
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [9c42ea0a2557f22f930fe994692a2541e7ef7750]
+
+	pub2k2+: parse font index in default styles
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [20005e30a693514c8b4d7bb4458756b6f054a228]
+
+	pub2k2+: Fix missing italic in some cases (TS030002173.pub)
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [6234693be70e3f7e9b259f640c87ac8be763b757]
+
+	pub2k2+: Fix error in font index parsing (fixes underlining and size problem in TS030003440.pub)
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [f02d1fb84ddc104f18f1b95251677eb13ec1c459]
+
+	Rectify braindeaded code misorganization
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [221f9cec72412b61f095671a43503bf45e5eff8c]
+
+	pub2k2+: Fix page ordering
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [cad4e34122dd05fa2ac1a4a289cc98aab221db4d]
+
+	commit stylize script
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [ca879bccc74948be6ca3a0f056a5468b0170a3c1]
+
+	stylize
+
+
+2012-08-14  Brennan Vincent  <brennanv@email.arizona.edu>  [3780d483b9de62189cd0727372ce27b6a65a191a]
+
+	pub2k2: fix inter-line spacing when expressed in points
+
+
+2012-08-13  Brennan Vincent  <brennanv@email.arizona.edu>  [db902ef2e3afe8de0c03aeb262ffa98586188f19]
+
+	pub2k2+: Correctly parse color schemes where black is not the first color. (Fixes color problems in TS010354188.pub)
+
+
+2012-08-13  Brennan Vincent  <brennanv@email.arizona.edu>  [b1832dac795626066ae3b40bc3186b3b3a46206e]
+
+	pub2k2+: parse and output shape recolor information. Result still doesn't appear in LibreOffice due to fdo#53469
+
+
+2012-08-13  Brennan Vincent  <brennanv@email.arizona.edu>  [ecd5156ae0db70005b0281f8afbaac389af7b748]
+
+	pub2k2+: fix erroneous table parsing
+
+
+2012-08-13  Brennan Vincent  <brennanv@email.arizona.edu>  [b938c45abcca76f58e9cdc0af6ea1a3ea859599b]
+
+	pub2k2+: Parse shape info in CONTENTS for all shapes, not just for top-level shapes. (Fixes missing text in groups, as in TS010079302.pub)
+
+
+2012-08-13  Brennan Vincent  <brennanv@email.arizona.edu>  [0507a43499832c6ffb0225571c3e968bd1900ea0]
+
+	pub2k2+: respect bold/italic/underline in default styles
+
+
+2012-08-12  Brennan Vincent  <brennanv@email.arizona.edu>  [29c65580381e42ff81c396c53308840ac10396f6]
+
+	2k2+: handle ancient LOGO chunks (fixes missing png in TS001084737.pub)
+
+
+2012-08-12  Brennan Vincent  <brennanv@email.arizona.edu>  [eabfaceb7c39fb472577b8a6471bede098fab410]
+
+	stylize
+
+
+2012-08-12  Brennan Vincent  <brennanv@email.arizona.edu>  [6acc9086b7a9e77713f4bb07896e6f40da105568]
+
+	pub2k2+: Vertical alignment
+
+
+2012-08-12  Brennan Vincent  <brennanv@email.arizona.edu>  [a462d9ba6659ef2a996ccdda1349e741293c2c6a]
+
+	pub2k2: parse line arrows (not outputting anything yet)
+
+
+2012-08-10  Brennan Vincent  <brennanv@email.arizona.edu>  [26a75d37b3ab1f4505c6e818736f8738759c77f7]
+
+	pub2k2+: parse multicolumn text
+
+
+2012-08-10  Brennan Vincent  <brennanv@email.arizona.edu>  [4588b3d414ca4c255b5618e5d51028103b672c53]
+
+	fix another warning
+
+
+2012-08-10  Brennan Vincent  <brennanv@email.arizona.edu>  [1a3387d7ed346a9004e7ec756982daeda804c6d2]
+
+	fix a warning
+
+
+2012-08-10  Brennan Vincent  <brennanv@email.arizona.edu>  [8c8d0fbfd2906b3f425529062a8628e4250facb8]
+
+	pub2k2+: parse tables
+
+
+2012-08-10  Brennan Vincent  <brennanv@email.arizona.edu>  [d68858d7c9b4eb0753220595e236d22777fb23c3]
+
+	pub2k2+: Parse table information from Quill
+
+
+2012-08-09  Brennan Vincent  <brennanv@email.arizona.edu>  [8fdb7637d7d915ee62a8c894f43c16d0153f3d4c]
+
+	pub2k2+: dashed lines
+
+
+2012-08-09  Brennan Vincent  <brennanv@email.arizona.edu>  [ce2fff41b3803fd0b28918dae49579f979105cbc]
+
+	Begin handling dashed lines
+
+
+2012-08-08  Brennan Vincent  <brennanv@email.arizona.edu>  [31d1b956839542ac700ae68889fbb283ef214464]
+
+	pub2k2+: super and subscript
+
+
+2012-08-08  Brennan Vincent  <brennanv@email.arizona.edu>  [c3670309ccde6ebc8b35c54a87db730692db53a2]
+
+	Forgot to add some files
+
+
+2012-08-08  Brennan Vincent  <brennanv@email.arizona.edu>  [b91ac58f79ae255a8432bad0af3d4c13e7bf3374]
+
+	Pub2k2+: Parse ordered and unordered lists.
+
+
+2012-08-06  Brennan Vincent  <brennanv@email.arizona.edu>  [7ad104f4abab872b1e41ae863c0e50098989f084]
+
+	Fix alignment of non-stretched border art
+
+
+2012-08-06  Brennan Vincent  <brennanv@email.arizona.edu>  [3c309f3dab438771a7070a01bcc7d4d7f19f92df]
+
+	Fix bug due to which border art images were not grouped in shapes without fill
+
+
+2012-08-06  Brennan Vincent  <brennanv@email.arizona.edu>  [72caf6a298179bf1395fb5bb6861ae3165612a09]
+
+	Respect BorderArt color if present
+
+
+2012-08-06  Brennan Vincent  <brennanv@email.arizona.edu>  [6b7e68a2198bb68e41ff83bf54b56f2141135329]
+
+	Stretching of border art when necessary
+
+
+2012-08-05  Brennan Vincent  <brennanv@email.arizona.edu>  [4932eebf6c6932e09f42c3f6803a55d7c77682e6]
+
+	Correct alignment of borderart shapes
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [01597de1744ab0238ec12de3725367b2fdc2f30a]
+
+	Fix bug in handling of border art image offsets
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [9a2ee4a04170645044b96616823446bb5a2a8933]
+
+	Fix more compile errors on old versions of GCC (third time's a charm?)
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [36b347f7202b55f856c1ddc988f5a0aadafc7f3e]
+
+	Fix broken commit
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [d30389bb38e44cd3a8efc7465c48d1bf39fb30a5]
+
+	style
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [66b55a8e71b057435ab1521ed3f3d52158ca55d5]
+
+	Emulate border art
+
+
+2012-08-04  Brennan Vincent  <brennanv@email.arizona.edu>  [fa8c260b622f21286ed8a512ae0d112a123e8668]
+
+	Fix parsing of border art images
+
+
+2012-08-03  Brennan Vincent  <brennanv@email.arizona.edu>  [25017b10088a3e42103fd6cdcfdb0c52f4ff133f]
+
+	Begin parsing border images
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [d49b682d76602464b768e2151fcfc8ca7a38e3ed]
+
+	interpret CornerCurve as CURVETO (vastly improves layout.pub)
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [6041e7db123f00537034090c2c7ac4f7cb064318]
+
+	Fixed problem with outline of custom autoshapes
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [7cda3277e680f3040f98dc16c25e4626d7de4519]
+
+	pub97: text colors
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [860b3f21c9207320bf49506e4685fe0f4212878c]
+
+	pub97: basic text styles
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [54fa0e12e2b609fd694ac8a474bef813f69a7005]
+
+	pub97: Fix handling of textboxes with multiple paragraphs
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [3f4f1f9f9025a6738768bd8f2ddff076bc59d0f2]
+
+	pub97: Fixed a bug in text parsing
+
+
+2012-08-02  Brennan Vincent  <brennanv@email.arizona.edu>  [451994f34209b06aecb810995fb2dd25c419c567]
+
+	Pub97: basic text
+
+
+2012-08-01  Brennan Vincent  <brennanv@email.arizona.edu>  [96574f4e85bad53c1c7e55dede7ad24e3a7d93af]
+
+	stylize
+
+
+2012-08-01  Brennan Vincent  <brennanv@email.arizona.edu>  [a72381a447f242f7dc6c173541d563da82f018b1]
+
+	pub97 basic text (still buggy)
+
+
+2012-07-31  Brennan Vincent  <brennanv@email.arizona.edu>  [b95db3f58bbfd2f87f2e514b2c1c56b85785b42b]
+
+	Enable fills of all parts of 3d shapes iff LibreOffice ever handles svg:fill-rule properly
+
+
+2012-07-31  Brennan Vincent  <brennanv@email.arizona.edu>  [f3b8fd8df43f609914231c55cc1571c5a5364834]
+
+	Fixed missing line in curved right and down arrow shapes
+
+
+2012-07-31  Brennan Vincent  <brennanv@email.arizona.edu>  [75dbbddc1936ef7f5d4eeaff8d17df58bda6e68f]
+
+	Temporarily disable warning
+
+
+2012-07-31  Brennan Vincent  <brennanv@email.arizona.edu>  [8f601d36fd5bcd5cbec35592e222f44586114d89]
+
+	Partially fix fills (full fix would require correct svg fill handling in lodraw core)
+
+
+2012-07-31  Brennan Vincent  <brennanv@email.arizona.edu>  [385cc2459a59eaceade49a6800e27aaf8c27ed78]
+
+	Fix handling of CLOSESUBPATH and ENDSUBPATH directives
+
+
+2012-07-28  Brennan Vincent  <brennanv@email.arizona.edu>  [859d42d0354fcb0883f279c4cfcf951aba028322]
+
+	Updated credits
+
+
+2012-07-28  Brennan Vincent  <brennanv@email.arizona.edu>  [29932342358ce002d05886b43be41199952da9d0]
+
+	start parsing binary vertices and segments
+
+
+2012-07-26  Brennan Vincent  <brennanv@email.arizona.edu>  [d981108179625a8d67041dea2cb20cce53294fc5]
+
+	Parse arc segments in mso autoshapes
+
+
+2012-07-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [47a01ab2c106b2be77d97063fd2ddc9440a58536]
+
+	Appease automake 1.12
+
+
+2012-07-22  Brennan Vincent  <brennanv@email.arizona.edu>  [9c4bb39ec3781b13a9641007db9abac15a33f4af]
+
+	Fix some compiler erros; continue simplifying MSPUBDocument memory management
+
+
+2012-07-22  Brennan Vincent  <brennanv@email.arizona.edu>  [56beaaa5cdc7fadc8d3340fd0da64a6f81d2345c]
+
+	Fix a memory leak
+
+
+2012-07-22  Brennan Vincent  <brennanv@email.arizona.edu>  [e1bdb82beb61d07a2217350dc87d0fbe2dd84ce2]
+
+	Use smart pointers to make memory management slightly easier
+
+
+2012-07-21  Brennan Vincent  <brennanv@email.arizona.edu>  [58a50eff7e818c33259a39a61ca3d31b30dd12cd]
+
+	pub97: shape fills
+
+
+2012-07-21  Brennan Vincent  <brennanv@email.arizona.edu>  [a640d80f8711d1b1a268b17d65a157678990f597]
+
+	pub97: rectangles
+
+
+2012-07-21  Brennan Vincent  <brennanv@email.arizona.edu>  [435ed691785ec898b7470024a0f0198302ced2db]
+
+	more work on pub97 parsing
+
+
+2012-07-21  Brennan Vincent  <brennanv@email.arizona.edu>  [e3c6476aeff0ca4b1df5b10125e7b8fdc6f3c756]
+
+	Refactor parse2kShapeChunk into several smaller functions
+
+
+2012-07-20  Brennan Vincent  <brennanv@email.arizona.edu>  [9da24661e958c23154047501fc43ad61716399c0]
+
+	forgot to add files
+
+
+2012-07-20  Brennan Vincent  <brennanv@email.arizona.edu>  [062332a4ef858cf93bfb4d639ee4d858d947a23d]
+
+	pub97: start parsing
+
+
+2012-07-20  Brennan Vincent  <brennanv@email.arizona.edu>  [42c817cee8125822793fa7e82cd7a2b5b164d240]
+
+	Multiple master pages
+
+
+2012-07-20  Brennan Vincent  <brennanv@email.arizona.edu>  [89040d5a5f91066f8cbc89d9a81bbd18e98f9cfd]
+
+	Fix compile warning in g++
+
+
+2012-07-18  Brennan Vincent  <brennanv@email.arizona.edu>  [3c9c250d4088582895f62633ddeb9d8378bffd79]
+
+	pub2k2: master pages
+
+
+2012-07-18  Brennan Vincent  <brennanv@email.arizona.edu>  [a4eec6f51e475664e868e9e89fb534a160661f7f]
+
+	Fixed image borders
+
+
+2012-07-18  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3f09e24c3f84766b53bd14359be5af3a241795e7]
+
+	Workaround a warning with older compilers about uninitialized boost::optional
+
+
+2012-07-17  Brennan Vincent  <brennanv@email.arizona.edu>  [a4871a48a57559264ff5f1d40c0024f8528f14ff]
+
+	pub2k: images
+
+
+2012-07-17  Brennan Vincent  <brennanv@email.arizona.edu>  [1bf04e27452b598cdc5bf3d6e6a81d5311a12b22]
+
+	Fix previous commit that was pushed accidentally
+
+
+2012-07-17  Brennan Vincent  <brennanv@email.arizona.edu>  [df759d4ea5d28140cc0015e39a292ea119e3505d]
+
+	pub2k: lines
+
+
+2012-07-17  Brennan Vincent  <brennanv@email.arizona.edu>  [44011cde068bbe5d878acf1cf5bd2ebb29e28a30]
+
+	pub2k: shape rotations (including group rotations)
+
+
+2012-07-17  Brennan Vincent  <brennanv@email.arizona.edu>  [4ddc0f8ca51447e790c8d2c1ff468a6a2df90002]
+
+	pub2k: handle shape groups
+
+
+2012-07-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f55ccc635f4435ce91de8415b0556bed640bd412]
+
+	Adapting LO build
+
+
+2012-07-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [2a4d90a82e22e17c1f9b024cce4f150541c3fd26]
+
+	Bumping version
+
+
+2012-07-14  Brennan Vincent  <brennanv@email.arizona.edu>  [f8c8fa53f15499917f11e90d7abd9475a5ce5b37]
+
+	Fixed erroneous assumptions about the validity duration of pointers to std::vector elements
+
+
+2012-07-14  Brennan Vincent  <brennanv@email.arizona.edu>  [80ab668274899e3fe8f7895c12a81cc436de6aec]
+
+	fix for images
+
+
+2012-07-14  Brennan Vincent  <brennanv@email.arizona.edu>  [30edaedc3d33c34530e2c97a1aa5eee9d2f7c233]
+
+	Break libmspub::MSPUBCollector::go into a few more manageable functions
+
+
+2012-07-14  Brennan Vincent  <brennanv@email.arizona.edu>  [2298535f8cb1c3ecd35a6ddd25f470855f44080a]
+
+	Remove scary comment
+
+
+2012-07-14  Brennan Vincent  <brennanv@email.arizona.edu>  [f34f293ee5fdbce11935c29fc3f63a03a4e39e87]
+
+	Get rid of narrowing warnings on recent versions of GCC
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [74ceded44cd6e140267c66e2aef108ed61b244b3]
+
+	pub2k2: backgrounds working again
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [02f586f134b1a82b991655e1651371e553d03a2b]
+
+	pub2k2: Fixed problem with nested groups
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [564ce2780028b0be3ac88d918375ba3fde25acbc]
+
+	pub2k2: Got fills working again
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [fdf385ed667d01292657909f7bebbc1f4303f619]
+
+	pub2k: rotation of groups now work near 90 and 270 degrees
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [83e07eebfeb338115f3e77fd5d96f9ecd31eb115]
+
+	pub2k2: Fixed a problem with the sizing of shapes in nested groups
+
+
+2012-07-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [699085a4bee3d73730a7db6b2c4810180c7eac33]
+
+	Put this pragma for gcc versions that understand it only
+
+
+2012-07-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [e6bec3f62d11d9ffc609d30db103b6d4f6879800]
+
+	No need of this include
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [70ca31a02aac1604c8f9e475c650013bbf465ee2]
+
+	Fixed a bug with fills
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [3e31be44412855239e02edfe6b3bf8959c736b73]
+
+	Fixed rotation with flip
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [96ee02d613e34bf55d816215c7c5765b57f6c441]
+
+	Fixed problem with shape rotation
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [23ac9fba05d1dc3abce2c22bf5d5ad985b166618]
+
+	Fix a few errors and warnings introduced by merge
+
+
+2012-07-13  Brennan Vincent  <brennanv@email.arizona.edu>  [f6153743d4b3d47338b5b3be0a65975663d03299]
+
+	Some refactoring (still buggy)
+
+
+2012-07-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f701d1c4e81e4dbe5e23d10a0a1e55ae6f5e4f6d]
+
+	Trying to diminish the compiler time/memory for PolygonUtils.cpp
+
+
+2012-07-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ae2336593a36c8636038cd350ef959243d8b2730]
+
+	Fix some crashes with iterator access
+
+
+2012-07-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [d0c11ea4cdafcb814098d7bf520522fd5da16c4c]
+
+	Some more cleanup to build +/- correctly on Windows
+
+
+2012-07-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [8cba5a65b3407aa795d05f600aa62a2174b4aef1]
+
+	Miscellanous M_PI fixups
+
+
+2012-07-11  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ec41dafd9b23296037857df5dd077b755a8f7453]
+
+	Fix a cppcheck error (is this actually needed?)
+
+
+2012-07-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [a4195107c63a5e9e47282a6af02f4cb59fc60ed3]
+
+	Trying to fix the static const data members
+
+
+2012-07-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [7b3a1208d5e398e4ad31463d5f5d51e8144ba00f]
+
+	Some cleanup
+
+
+2012-07-08  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [faf23fea1dab5ee5257d8f0f8d90f342e3f3445e]
+
+	Bump version (not a release yet, though)
+
+
+2012-07-08  Brennan Vincent  <brennanv@email.arizona.edu>  [8e616677091929eb24989907f8b164c914aaee91]
+
+	Added my name to copyright notices
+
+
+2012-07-06  Brennan Vincent  <brennanv@email.arizona.edu>  [69ced787a1a45c8d986726e56246d023ac91c0b2]
+
+	Added Coordinate.h
+
+
+2012-07-06  Brennan Vincent  <brennanv@email.arizona.edu>  [7a4e9694266cf5cb98963ac27d7fa926ca4688cd]
+
+	Group transformations
+
+
+2012-07-06  Brennan Vincent  <brennanv@email.arizona.edu>  [afe82661f79a9c2f7de33a7d2667b57b1b4b58d8]
+
+	Fix bug causing some shapes to be positioned wrong by several pixels
+
+
+2012-07-06  Brennan Vincent  <brennanv@email.arizona.edu>  [028dc224435ed2e760ae6db9f0955c53cca8d203]
+
+	Refactor handling of shape roations; handling of group rotations nearly done
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [c52782d680819676ad34ca8404e616a0d7cdf412]
+
+	Round rectangles now have correctly scaled corners.
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [0f7aea13c30104e64c1730dc45bce72f727b3ee0]
+
+	added ColorReference.cpp
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [d35c7f4005c9db6ffe6d1a8204a650f7260ef8fa]
+
+	Refactor shape handling
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [293342b1b8720ccdb5cf7e27d01893243178b385]
+
+	pub2k2: Get rid of annoying off-by-one-pixel issues by only emulating shape borders if necessary
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [f20707075fe1f600b009625a7a86af39262554cf]
+
+	pub2k2: Fix bug in determination of group sub-shape coordinates
+
+
+2012-07-04  Brennan Vincent  <brennanv@email.arizona.edu>  [b3f0255f97873cca482d2f78b7690eb8bb0d7b48]
+
+	pub2k2: shape groups working again
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [49c22c71ea10726e9b1b32377b6f3eaa6f95a842]
+
+	pub2k2: Fix imprecise reading of shape rotations; Parse group rotations (not sending to painter yet)
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [01f5d03ec6f2be5f810aa170c2aba50615e1989e]
+
+	Forgot to add some files
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [47dfc5dd694153bbf43df78c91271f6cdb056689]
+
+	pub2k2: Fixed angle of diagonal fills
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [bb05cb1167e1403bce3fee8d9d41310f4d58646d]
+
+	Stylize
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [dff36c7b1fa514beff551818a29ee93a886d2ae5]
+
+	pub2k2: Independence Day miracle: nested groups finally working
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [8db20c282dae3476698d3a33aba13d702f2b571b]
+
+	Stylize
+
+
+2012-07-03  Brennan Vincent  <brennanv@email.arizona.edu>  [3287f97602cb4c6b6bd506a2ce9152b7d0d1730a]
+
+	pub2k2: Parse rectangle border position and send to collector
+
+
+2012-06-30  David Tardon  <dtardon@redhat.com>  [5f8e8aea0c70f3acc42a28d3fda12bee6547cb1d]
+
+	coverity: unreachable code
+
+
+2012-06-30  David Tardon  <dtardon@redhat.com>  [c6adefab75cc1a0b7f8c876fc8b71f8868440c10]
+
+	coverity: memory leak
+
+
+2012-06-30  David Tardon  <dtardon@redhat.com>  [86e1abb3ad079acac4ec2c2951233077960ca37f]
+
+	coverity: remove superfluous copy ctor
+
+
+2012-06-29  Brennan Vincent  <brennanv@email.arizona.edu>  [8e24417d0f8173862d70ef4a5942553b2f3c0814]
+
+	Handle rectangle border position (inside shape or not)
+
+
+2012-06-29  Brennan Vincent  <brennanv@email.arizona.edu>  [17530bfce6cf3f98df3fd508fc3445c208cb7ac6]
+
+	Correct Z-index for parts of rectangle border
+
+
+2012-06-28  Brennan Vincent  <brennanv@email.arizona.edu>  [cac424f486ceb9766ed3830c53d7425613b3ad91]
+
+	Continue fixing rectangle borders
+
+
+2012-06-28  Brennan Vincent  <brennanv@email.arizona.edu>  [c0e5f22668f2593d826d005e6db595089ab07fad]
+
+	Correct spacing of lines in rectangles
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [50dd3cc57e5d851aba236c8d6a172fd4909d2c68]
+
+	Fixed some cppcheck problems
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [a5c96b9f9b88e428c3423405bfd8a7bb5323ebb4]
+
+	Remove unused definitions of semantically meaningless copy operators
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [31acfb7b5bf7a4dd1cf3b1d5a71b7c7662a09f2e]
+
+	Can now draw horizontal lines
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [f7e4ad394f9525df8e71052a4284a91885a5c9cc]
+
+	pub2k2: line widths
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [58b8309836b509f20c48b2762348ea9d17bc4a7a]
+
+	pub98: text size
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [0869db4062a664ff40b48e249b02956d31c44c95]
+
+	Text colors
+
+
+2012-06-27  Julien Nabet  <serval2412@yahoo.fr>  [03a5184ac488c51938cd77efa2595f37361a1b29]
+
+	Fixes 2  'Possible inefficient checking for 'xx' emptiness'
+
+
+2012-06-27  Brennan Vincent  <brennanv@email.arizona.edu>  [8cb2b1e03928c828e24557757ab3df370ff1722c]
+
+	stylize
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [8fca0af82e10da28fe56c1cc0004d11a30bfb12e]
+
+	pub98: handle text
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [34d59798f7a38cf436f32460546b1aae94e9b41b]
+
+	pub98: Parse some more shapes (imperfectly)
+
+
+2012-06-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [be373ed270e844930aa26c97853de3e6f5f9c6d2]
+
+	Extract more of the detection logic into getVersion function
+
+
+2012-06-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3dfdc6b41a19c38fc1603223736f10f3232d5539]
+
+	No harm to initialize pointer to zero
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [06f5f54cd52015796fa1ad5042ac58edc0c3c8e4]
+
+	stylize
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [d54e107a04a59b1f2303bc81a5d1812f3fef5430]
+
+	Some more refactoring
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [13c298c4c65b3738b6509c0357de3fe87ae24b25]
+
+	Fixed silly bug -- check diff for why very-late-night tired coding is inadvisable
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [60946a48949d5c1667b063bda53d85026efac1ba]
+
+	further refactoring
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [a316211df69868e9bd20868889f21f98e1d076ea]
+
+	some refactoring
+
+
+2012-06-26  Brennan Vincent  <brennanv@email.arizona.edu>  [26a0e71cb4f3c5dbb06a68ae095f827a355de7c4]
+
+	pub98: Handle a few shapes
+
+
+2012-06-25  Brennan Vincent  <brennanv@email.arizona.edu>  [763da839b3a2402b11cc2fa797c6a7d5ebe83187]
+
+	pub98: Handle sub-point line widths
+
+
+2012-06-25  Brennan Vincent  <brennanv@email.arizona.edu>  [63752e5222f6f1c961f0a08aeafe0b53b9523b75]
+
+	pub98: bitmaps
+
+
+2012-06-25  Brennan Vincent  <brennanv@email.arizona.edu>  [4e34bd61f95f19db1628cea6365c489fc953008a]
+
+	pub98: respect different line colors and widths in rectangles
+
+
+2012-06-25  Brennan Vincent  <brennanv@email.arizona.edu>  [b7d7104e4753a37124d87f6a0af1781dc7dd6171]
+
+	Removed some unnecessary constructors
+
+
+2012-06-24  Brennan Vincent  <brennanv@email.arizona.edu>  [df1feafbcb8140a5a8bf0ddef6b2f961bfdcb408]
+
+	Fix several compiler errors
+
+
+2012-06-24  Brennan Vincent  <brennanv@email.arizona.edu>  [d615e6a6d7f1607de0b1e46c02bcb44df0da2829]
+
+	both versions: output stroke width
+
+
+2012-06-24  Brennan Vincent  <brennanv@email.arizona.edu>  [b9479568d40479658661f8de05333c612920bb98]
+
+	pub98: start processing of different lines for rectangle sides
+
+
+2012-06-24  Brennan Vincent  <brennanv@email.arizona.edu>  [5514b1661f8407f76d48263ae22025d858af6876]
+
+	pub98: start image processing
+
+
+2012-06-23  Brennan Vincent  <brennanv@email.arizona.edu>  [97b99a0f1d0af187edb70b6652c2255a05bcd31e]
+
+	pub98: ellipse solid fill
+
+
+2012-06-23  Brennan Vincent  <brennanv@email.arizona.edu>  [7d5c3fd9187d5d49528caa19f3282f4cf20a2982]
+
+	pub98: don't draw dummy pages
+
+
+2012-06-23  Brennan Vincent  <brennanv@email.arizona.edu>  [fc3dea8dbeaca446e73f72dbdd5273be4ac09e6b]
+
+	pub98 ellipses with correct line color
+
+
+2012-06-22  Brennan Vincent  <brennanv@email.arizona.edu>  [daf069b2ff723b25c696d7dd64d0553df71d0320]
+
+	Revert "Remove unused reader functions"
+
+	This reverts commit bf1c8b0c4f24d932acce8d85e798c868ac5f3c7e.
+
+2012-06-21  Brennan Vincent  <brennanv@email.arizona.edu>  [8332a553e133be700e7fbe9b2cac6da04e8b8100]
+
+	Lines
+
+
+2012-06-21  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ec3cf6498f3c0b8ac289f6f37a5f0e895b4028eb]
+
+	Check overloaded WPXPropertyList::insert
+
+
+2012-06-21  Brennan Vincent  <brennanv@email.arizona.edu>  [dac565f4ad3f2c6d0dfd1ab478914a27f87ebc82]
+
+	Implemented first-line, left, and right indentation
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [6c7c074a5ff8037f928e8071b23c5b799cb7e6d9]
+
+	Partial support for spacing before and after paragraph; full support blocked by LibO bug
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [d1290dc89f1aad2e71c55673f2592a79498a63d3]
+
+	Partial handling of line spacing
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [c61bf2be457e65e0d2bcb0a318166dc2af88b2bf]
+
+	fix format string mismatch
+
+
+2012-06-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ab4a8fcdf6e79a577ec8ebe1bf4bdc2a45d24520]
+
+	Fix a crash with non-existing layer id
+
+
+2012-06-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [543755ba3689f169af678b9c7eeb85637f3e3e00]
+
+	astyle cleanup
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [b95d12f2e9ee78abe193ea3781efc3bb483e2f1a]
+
+	Shape text margins
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [afa0dacc374060c8f66e20cf7b756b81024bc9ed]
+
+	Rotate image shapes; images as fills of other shapes not implemented
+
+
+2012-06-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1deb0b827a9c2ea47b2c0a42c39ce45451712d5d]
+
+	Disable optimization in debug build
+
+
+2012-06-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [be6d4c9c49473c7e22d716f87f69a4d479bffdb6]
+
+	Fix distcheck error
+
+
+2012-06-20  Brennan Vincent  <brennanv@email.arizona.edu>  [251bf88f1d13197216263356a2fabdb463e9beb9]
+
+	Added ShapeFlags.h
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [924b7694a8c6456a8dc098d1f5993d6cd2ca5a9e]
+
+	Handle text in flipped images (may seem incorrect, but this is how MS Publisher, which is incapable of mirror-image text, handles it)
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [c2d454555466d869ef9a926a1c41cab49264268f]
+
+	Rotated text
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [b337c912e3e8de35a8a4a9887a5157e143a4751d]
+
+	Respect use line boolean flag (fixes problem with outlines being applied to shapes that shouldn't have them)
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [3fa510077f8c6c9f54ea0fd7ac0ba681d7be0e4b]
+
+	Slight refactoring of text drawing
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [913ebdaaee434b633898537fc0b8933b8981922f]
+
+	Removed some dead code
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [5256cc021a26e825ade1a470f6ec228aed889bf0]
+
+	Fixed disappearing text fills.
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [c6d745ae19ad5a145ff8a771e831a1dc5684b7a5]
+
+	Fixed bug causing mismatched XML elements in odg output
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [f9588aa499b7bf09a33ce3e3d45945cb871b4274]
+
+	fix for broken images
+
+
+2012-06-19  Brennan Vincent  <brennanv@email.arizona.edu>  [9482435dc236bad3d797477c5b6fc499595a1f4b]
+
+	fixes for rotation; horizontal and vertical flips
+
+
+2012-06-18  Brennan Vincent  <brennanv@email.arizona.edu>  [0396242c9d6c392ea237425764887507a04f05eb]
+
+	rotation for shapes with arcs
+
+
+2012-06-18  Brennan Vincent  <brennanv@email.arizona.edu>  [8408ff561e80ccdcd5247278421c396aa7638d02]
+
+	rotation for shapes that do not contain curves
+
+
+2012-06-18  Brennan Vincent  <brennanv@email.arizona.edu>  [ae5e0eeb285cd7e437f34952c827943178e0aa29]
+
+	added a comment; fixed formatting
+
+
+2012-06-18  Brennan Vincent  <brennanv@email.arizona.edu>  [0d28020fe97dc63b606e681e95f0e0790ef86593]
+
+	partial fix for arc commands; still not working perfectly
+
+
+2012-06-18  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1b36034a567d3d59778ceedec82e528187c229e3]
+
+	Reformat for readability + add a comment
+
+
+2012-06-18  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [45e4b837d1720d36eed936ff9c73cf2a3f2ab3e8]
+
+	output two geometries only if necessary + group them so that they can be resized together
+
+
+2012-06-17  Brennan Vincent  <brennanv@email.arizona.edu>  [5e1274a46427eb16da001d5cd4cbfaf341524224]
+
+	partial workaround for LODraw svg fill bugs
+
+
+2012-06-16  Brennan Vincent  <brennanv@email.arizona.edu>  [72767e530736bc3a61ba70b0fc568b2fcd7ab874]
+
+	fix incorrect fill
+
+
+2012-06-16  Brennan Vincent  <brennanv@email.arizona.edu>  [b9a78acf58b9186aa0276d451f4c42809a13a389]
+
+	fixed some mistakes
+
+
+2012-06-16  Brennan Vincent  <brennanv@email.arizona.edu>  [72b13feecbc7eb307ae0324a89aa4c9e979bbbef]
+
+	style fix
+
+
+2012-06-16  Brennan Vincent  <brennanv@email.arizona.edu>  [c4a4b6b1110ccc0d4143920421120d56e7e1494c]
+
+	more shapes
+
+
+2012-06-16  Brennan Vincent  <brennanv@email.arizona.edu>  [5cf6d80d33754112b9c2f6f76e7c33e59f1d5a94]
+
+	more shapes
+
+
+2012-06-15  Brennan Vincent  <brennanv@email.arizona.edu>  [8c53c6b328924d02b355202c19d48a0a41584b6f]
+
+	text fade right shape
+
+
+2012-06-16  Julien Nabet  <serval2412@yahoo.fr>  [92a6c529f9b5ac6c5c1117b34452e8d2b40a3ac3]
+
+	Some cppcheck cleaning
+
+
+2012-06-15  Brennan Vincent  <brennanv@email.arizona.edu>  [a2dfaabf87a9c0ddc80f8b04ac10f9fc8c348059]
+
+	yet more shapes :)
+
+
+2012-06-14  Brennan Vincent  <brennanv@email.arizona.edu>  [49bae50871f6efe8bee48ce10f5c9eeca7c85e39]
+
+	yet more shapes
+
+
+2012-06-14  Brennan Vincent  <brennanv@email.arizona.edu>  [c20420460acab41229b23718ecc87bb428fcf1e5]
+
+	some more shapes
+
+
+2012-06-14  Brennan Vincent  <brennanv@email.arizona.edu>  [dab4bc730dd4e42b5ad36020a7ed1c56a90e5651]
+
+	some arrows
+
+
+2012-06-14  Brennan Vincent  <brennanv@email.arizona.edu>  [7dcc383d691cef0c25ad11ae7f936f2276546ff4]
+
+	comment out broken code
+
+
+2012-06-14  Brennan Vincent  <brennanv@email.arizona.edu>  [21d5133a0d59df485e11a8a9e6692ba373b390ce]
+
+	badly broken (unusable) arc support
+
+
+2012-06-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [922ad6872d87f006e4e6759596c99f239231f901]
+
+	Typo
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [0301856a5ead347097c08caa6765f2a70f0d1f65]
+
+	Some more shapes
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [dad4089dae17214f9831bbfaf9b3cf2b73f9ee71]
+
+	some more shapes
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [722c21f70894809716fa8a3cd11177fa6a035b37]
+
+	Fix for brackets
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [2299c81eeadea0d2f24d3867115197adedb03258]
+
+	some more shapes
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [a8065a6ed9ae8fb5d7159f20c04a5e72ef47e081]
+
+	several more shapes
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [0f0e080f247868c687d58b5cf225da3db397dfe6]
+
+	style fix
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [d996030cd0d2159c3bf258951d0148114d35a0dc]
+
+	fix CURVETO
+
+
+2012-06-13  Brennan Vincent  <brennanv@email.arizona.edu>  [888d23a4a9b0b29f3216dc42c1d777e4a88542d8]
+
+	added several shapes
+
+
+2012-06-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [573fc0c33a3328832e9d5f40e71334fae7d84e22]
+
+	Remove unused collector function
+
+	Easy to revert if is actually needed
+
+2012-06-13  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [bf1c8b0c4f24d932acce8d85e798c868ac5f3c7e]
+
+	Remove unused reader functions
+
+	Easy to revert if they are actually needed
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [7a84b11b65efe9b182de51e936793e49906e7cd4]
+
+	removed useless code
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [4392591154f855c4d52778ab2d0f4d56e7511ed7]
+
+	Text in shapes
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [a61d05ccb575ec1b9ad18b9af32c60201472c0de]
+
+	Fixed typo in 4-point seal
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [c1a87122b3ba2de8cc11b1bd67942cd4bf8c39fc]
+
+	Balloon (?)
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [272e87eb110d6f720fc0e8a0c716efbc05dd6f8d]
+
+	Cube
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [2b688f54b2d041fc5bcfdd44be65da2afa7a5d62]
+
+	Home plate
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [c5ff66fec76fc7c923b0f70dfa427019b76d0b20]
+
+	Octagon
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [90c13c39450c0839b188be0b23c87a5f4362c13d]
+
+	round rectangle
+
+
+2012-06-12  Brennan Vincent  <brennanv@email.arizona.edu>  [9df39f83eeb631c36af640b48b2450a6b6b2ea09]
+
+	plus
+
+
+2012-06-07  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0ffe84c8f6bde01346fcf4d3d0df489850b13844]
+
+	Update licence text for LGPL
+
+
+2012-06-07  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0b30f5542a2dee7d73c546617a5ea612e17816b1]
+
+	Oops, wrong license headers
+
+
+2012-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [918350bd8c0ab698c0e1da6699cad508b121cc2c]
+
+	Bring images back
+
+
+2012-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [52e1e3840d38877545dcc648ddaa2aa6dd74d1bd]
+
+	add file to the LO build
+
+
+2012-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9af8eade0eed70fd7c2ac3847d902bf60f0e7601]
+
+	Fix some struct <-> class mismatches
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [88c47b4f7944a7013b480a586ada0ad6444c7c21]
+
+	star
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [2b16a32e2360085bf06e3d337aace1805610580a]
+
+	Fix default fill and start parsing shape rotation (need to fix OdgGenerator before fully implementing rotation)
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [f524f613823e6d774359bdd092421b93104cd398]
+
+	fix
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [631a6dbbc04288230aaf4dba391e47feb92b365e]
+
+	Added a few more shapes
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [250a68cdd08fddc8d605817caca91abe20f7db18]
+
+	Added a few more shapes
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [c06f3fd8a3985d56a9e63615e151a1219fd91153]
+
+	parallelogram
+
+
+2012-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b049f6d6ef9e86c339b043f00372404abfb89717]
+
+	Warn about one variable shadowing other
+
+
+2012-06-06  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [6b17ea5c3098a9935d561750fdd0dd57836baf45]
+
+	Warn a bit more with the autotools build
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [4b0c801cfcd42076b137c8941718b627a3639a78]
+
+	Isoceles triangle (plus a few general fixes)
+
+
+2012-06-05  Brennan Vincent  <brennanv@email.arizona.edu>  [4b880c295ecbaab0ed76f6ed8dcf11a98ccff206]
+
+	made shape parsing more advanced; added 4-point seal to test
+
+
+2012-06-04  Brennan Vincent  <brennanv@email.arizona.edu>  [6aafbb91b31e41a1304923adc7970e35649c2461]
+
+	use new more general shape-drawing code inspired by LibO internals (only implemented for rectangles and ellipses as of yet)
+
+
+2012-06-04  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3d33cf6a13804f9c5cf3adc3e2e6549ce79c6fee]
+
+	Remove warnings about shadowing of members + some LO build fixes
+
+
+2012-05-31  Brennan Vincent  <brennanv@email.arizona.edu>  [d00eed8134f071808e0f7e5ea288fb4ab1378cae]
+
+	Stretch shape fills where necessary
+
+
+2012-05-31  Brennan Vincent  <brennanv@email.arizona.edu>  [6675aa4aa6b35cede9c77ec8514f4119af37608e]
+
+	Got rid of extraneous outline on some images
+
+
+2012-05-31  Brennan Vincent  <brennanv@email.arizona.edu>  [3775c8bf45be2173666dec4fb9e2bf0b73043c91]
+
+	Pattern import complete; further problems likely due to lodraw bugs
+
+
+2012-05-31  Brennan Vincent  <brennanv@email.arizona.edu>  [c37ad94ef25d9b1ad1e9e1364cfd154c4f3ec63a]
+
+	fix erroneous bmp header generation for color depth <= 8 (allows emulation of b&w patterns)
+
+
+2012-05-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [3534954504804636f5beee860e1b770afe51e93b]
+
+	undeflating is like unemptying :)
+
+
+2012-05-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f66bc4c54a45bcbc02100f3f758d1a60175052be]
+
+	Add the BMP header to the DIB files
+
+
+2012-05-31  Brennan Vincent  <brennanv@email.arizona.edu>  [a09b1bb936950f155fc6886796f91e8005355c39]
+
+	Handle shapes with "textures" as backgrounds in the same way as those with image backgrounds
+
+
+2012-05-30  Brennan Vincent  <brennanv@email.arizona.edu>  [150547ad794ac6504a39b7a4064fbdbe9e7c0eeb]
+
+	Greatly improved gradient handling
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [e5818e214688a952cb6e6c203773d67ebb4dac46]
+
+	skip fills based on fill props
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [3f59814ee7c287cda84661a80c879892604c76d1]
+
+	Transparency in gradient fills
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [77a9d583d514a6950b92995772ce335df0dbffb6]
+
+	Fixed backwards gradients
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [3f97dd05ebd8805a020e7ae21a82999afc82192e]
+
+	Transparency in solid fills
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [741b751bcb4f87cd781230945567da07830aedd8]
+
+	astyle -b -k3 -y -n -s2 -r \*.cpp \*.h
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [594f40a1aa711be957c1baad14e2a1fb241f5d3e]
+
+	Basic background parsing
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [7df1ba31c3611aceb87732307cc1471b2bdd7623]
+
+	Text shape fills partially working
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [ba9a0035cd422a87c3b4107c004e6ac70ddcba90]
+
+	slight refactoring
+
+
+2012-05-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b59018635f31c64ddac633faea83eaa63bdc0252]
+
+	Don't try to build non-existing files
+
+
+2012-05-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [71518104ae9e73cbe21fdfc048c410a746c13f9c]
+
+	dib -> bmp + don't specify mimetype if we don't know it
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [e155f042799489a6fd18dcdf6ffcf2dfadfcf2cb]
+
+	Use zlib instead of contrib
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [50d2009a20919a3f4530a9aea630acd81d118c13]
+
+	Deflation of WMF files
+
+
+2012-05-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [756067699b27ed592e25523ffcd349db1e845831]
+
+	Some little changes to help me to debug streams
+
+
+2012-05-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [adfca6fdee3ac77d773491b171e65b3ff382a210]
+
+	Don't use pointers where a non-const reference can be used
+
+
+2012-05-29  Brennan Vincent  <brennanv@email.arizona.edu>  [23889d4c25402071dc9915ff7994c39e6119f7a1]
+
+	Z-order
+
+
+2012-05-29  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [659e842327199b9dd631f3ce374acbdbdf7a93d9]
+
+	Fix distcheck error
+
+
+2012-05-28  Brennan Vincent  <brennanv@email.arizona.edu>  [fa4bfdb14af6e8ac9d00f5cfb80fefe69e34c263]
+
+	Fixed bgpxid wonkiness
+
+
+2012-05-28  Brennan Vincent  <brennanv@email.arizona.edu>  [6e2adfc27826e50a7e0c23b9ffab7ee8d06da2bc]
+
+	Oops -- forgot to add FillType.h before pushing
+
+
+2012-05-28  Brennan Vincent  <brennanv@email.arizona.edu>  [facf9a0db1cdef87cda004dd12334db9bb11b473]
+
+	Geometric shape gradient and bitmap fill
+
+
+2012-05-27  Brennan Vincent  <brennanv@email.arizona.edu>  [43d8eb32aa21fa9d30f5572f23c52e1c1af55b50]
+
+	Some refactoring
+
+
+2012-05-27  Brennan Vincent  <brennanv@email.arizona.edu>  [f9a1378d5a7c0e981d952554e33d6b8893083196]
+
+	Oval and rectangle solid fill and line
+
+
+2012-05-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [479a82943f7b1b298b4f2e0ec5f6b7e0969f0abf]
+
+	Little whitespace cleanup
+
+
+2012-05-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [452623f5d08cface75999bca848b1ee3bd09cf3f]
+
+	Check for required boost header
+
+
+2012-05-26  Brennan Vincent  <brennanv@email.arizona.edu>  [4a4520cf0a24762f4e73b92ebcd6f84715e202a3]
+
+	Suppress some warnings about missing copy constructors
+
+
+2012-05-26  Brennan Vincent  <brennanv@email.arizona.edu>  [fb9422c5d6144ad37519412148b3dfa6e753762f]
+
+	Reorganized MSPUBCollector somewhat
+
+
+2012-05-25  Brennan Vincent  <brennanv@email.arizona.edu>  [c249df247b0a434cedc521392e9a41557fe73c57]
+
+	Images now work again
+
+
+2012-05-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [87d871afaa6fc7eff1fc3035b893b873c8b014c8]
+
+	Don't crash in svg generator if we don't know position and size of foreign object
+
+
+2012-05-25  Brennan Vincent  <brennanv@email.arizona.edu>  [37907224529fb75f56a07928e9ccd89a0ffab945]
+
+	Added ShapeType.h
+
+
+2012-05-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [5d8a552357606e70f2077be2815bf01fb42c8ab9]
+
+	Whitespace cleanup (astyle -b -k3 -y -n -s2 -r \*.cpp \*.h)
+
+
+2012-05-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [80d1cd2f2c75ebdb531c674854df9e561df60991]
+
+	This function can be const
+
+
+2012-05-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [5e7bd828e257dd74beed03644fc7c39658d00db9]
+
+	Don't allow typedetection to propagate exceptions
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [84e530ae5651e22622b22e4806eef7c6c731b713]
+
+	Display ovals and rectangles
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [3d17e07740e1da558c558b8cd3c2db6aa0d324f8]
+
+	Attempt to fix warning on GCC 4.6
+
+
+2012-05-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [4c81676cdd28b265519e08d3a189cdf7811ba57f]
+
+	Include necessary headers inside LibreOffice build
+
+
+2012-05-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f6d69afd854fb3186b7f9c6d96e514f6be69f2a1]
+
+	Fix miscellaneous warnings inside LibreOffice build
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [80c251152ea5d9f7f19f72b9d6b829ed601a4c94]
+
+	Fix text color in styles that don't use the default color -- I hope I never have to touch text color again ;)
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [36fbcde1a20f4cb7e2f851efd8fb5539193788fb]
+
+	Fix situation where the first palette color is not black.
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [bb119177ad70076206cc264c6eb9f9532b25ddc9]
+
+	Handle palette colors
+
+
+2012-05-24  Brennan Vincent  <brennanv@email.arizona.edu>  [b05a2c4d66991cf2fd8d288a77f5a4aceba930d6]
+
+	It seems only the first byte in the 0x04 enum is alignment
+
+
+2012-05-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ca6a70d6ab96692c4e2312c9e1fe95a066be43c9]
+
+	Prepare for use of zlib
+
+
+2012-05-23  Brennan Vincent  <brennanv@email.arizona.edu>  [7654236ca69e6379efa26141502afe7fce13a0b6]
+
+	Remove some uselss comments and fix typos
+
+
+2012-05-23  Brennan Vincent  <brennanv@email.arizona.edu>  [09325677fabed66c435227c3663acd1811470df2]
+
+	Parse Quill with multiple chunk references correctly
+
+
+2012-05-23  Brennan Vincent  <brennanv@email.arizona.edu>  [35361326905fbf5c4b86918e0804c4c4f0680bce]
+
+	Fixed a bug causing blank dummy pages to be generated.
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [7b58bad2a5cc36dd42964b794daf24abb934f75a]
+
+	Apply default paragraph styles (fixes alignment in sanket.pub)
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [a41fa16e7de76844b17d4230192704b1cdd2b428]
+
+	Handle paragraphs of styles other than "normal"
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [2387074ee71e8838615bfd1967940d0be9c0592d]
+
+	Handle normal fonts (no embedded fonts)
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [16014f3ffea8fba27de4b1ee827c06caacf4c056]
+
+	Now use pxId correctly
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [870f334759ac883f3423160857910f9324f301c0]
+
+	Fixed pub2xhtml usage message
+
+
+2012-05-22  Brennan Vincent  <brennanv@email.arizona.edu>  [c3180eef44604188c8eac73c21dfc946f4d21b1b]
+
+	Optionally specify an output file in pub2xhtml
+
+
+2012-05-22  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [ee2a1cc86184046bdfade9ebdd2c41e6343ccc2e]
+
+	Improve readability and don't mess up with C++ streams if not necessary
+
+
+2012-05-21  Brennan Vincent  <brennanv@email.arizona.edu>  [a06c946f769b572cd506a65c6f032d84e6e607e1]
+
+	Default text size
+
+
+2012-05-21  Brennan Vincent  <brennanv@email.arizona.edu>  [2992af618ccbf8fa1da53c798405289415ea9e54]
+
+	Fixed issue with multiple paragraphs per text shape
+
+
+2012-05-21  Brennan Vincent  <brennanv@email.arizona.edu>  [17c3675ce37662887655eac984f15b77294df5ea]
+
+	Basic paragraph styles (alignment)
+
+
+2012-05-20  Brennan Vincent  <brennanv@email.arizona.edu>  [74e8f989f57fbac5ca50548bc313001de07926fb]
+
+	Font color
+
+
+2012-05-20  Brennan Vincent  <brennanv@email.arizona.edu>  [50f04e84d30d7472f3df38ee4e26e10205b1bfb1]
+
+	Font size
+
+
+2012-05-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b3f6ab76aa591f0c8c971f1c8870040df4bc2d1a]
+
+	Update the LO makefile.mk
+
+
+2012-05-20  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9aac0df905431b594cab14743cb24983ecab9083]
+
+	Add the Escher*.h files to the dist tarball
+
+
+2012-05-19  Brennan Vincent  <brennanv@email.arizona.edu>  [a72784df9504a90ef0a22d1edaf8d9834a3fbe6f]
+
+	Handle bold, italic, underline
+
+
+2012-05-18  Brennan Vincent  <brennanv@email.arizona.edu>  [02baede05ed253498676a44b85cc9075b9893853]
+
+	a few parsing fixes; jpeg images
+
+
+2012-05-18  Brennan Vincent  <brennanv@email.arizona.edu>  [eebc2bcae0b079700d91bba9be8e80a8feb9c5df]
+
+	Embedded PNG import
+
+
+2012-05-17  Brennan Vincent  <brennanv@email.arizona.edu>  [c7413e2fabb3c4fb825fc4cb90bc9e5b507538c9]
+
+	Rudimentary Escher handling.
+
+
+2012-05-16  Brennan Vincent  <brennanv@email.arizona.edu>  [8f5b9dbed753fdca6a77d238a0f882981a2bd624]
+
+	Fixed bug in quill parsing
+
+
+2012-05-16  Brennan Vincent  <brennanv@email.arizona.edu>  [bc41e831ffa07bea0cba122708bf3801a68c31d1]
+
+	Fixed debug message formatting
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [f232d56a57922c1d2aa55154fb82d4d4f4a05cd4]
+
+	Fixed some errors in block parsing code
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [1789ef6d166c335f1888ce6db3b2318a63806586]
+
+	Fixed bug in text handling
+
+
+2012-05-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f4a3cffb0a988313acdb83a6d658001c8c06e07b]
+
+	Add license header to the file
+
+
+2012-05-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [2c3a81b3e57da8d54168f3bf18609b32550eacc7]
+
+	Fix distcheck errors and some whitespace action
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [f3758bbb855b692a86d1baad5b6c9406bcf28487]
+
+	Added constants file
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [0fa24bba275daaa08a61e1ca323207985058dc61]
+
+	Removed useless code.
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [6d02f64b17db14468cc413180a99e11de1818a6e]
+
+	Fix an earlier oversealous use of sed
+
+
+2012-05-15  Brennan Vincent  <brennanv@email.arizona.edu>  [34242663cd791cef8c90a9a5239052ed316df023]
+
+	Get shapes corresponding to a page; send text shapes to the painter.
+
+
+2012-05-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [1a1fd48e9e63b421d1cc53d8fd8927adfaec058b]
+
+	Add utf16 -> utf8 handling function
+
+
+2012-05-15  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [5953d63f82f5b9e3387f465c90565b79d231aca2]
+
+	Fix distcheck
+
+
+2012-05-14  Brennan Vincent  <brennanv@email.arizona.edu>  [3da59c9307a23fa6f97e99d240fb701af8e86d11]
+
+	Changed a few names
+
+
+2012-05-14  Brennan Vincent  <brennanv@email.arizona.edu>  [897d7e67d48e928e78e57cefc3a24d07619ae4c3]
+
+	Added enumerations for block/chunk IDs and types
+
+
+2012-05-14  Valek Filippov  <frob@frob-laptop>  [848498e8e951bd5de04b489f0fdf415610b44dd5]
+
+	Valek knows more about 0x48
+
+
+2012-05-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [62cf158c310415d232043ec7fb6abc0a492e2638]
+
+	Astyle action (astyle -b -k3 -y -n -s2 -r \*.cpp \*.h)
+
+
+2012-05-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [59f55ba0af0a4d54a54aa6a1e093c89a42fe818e]
+
+	Some whitespace modifications
+
+
+2012-05-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [8aed8b24ed7b9d53e8498c15bf37ad237c220b1e]
+
+	Initialize variables on declaration
+
+
+2012-05-13  Brennan Vincent  <brennanv@email.arizona.edu>  [0e21e8ba2b4f057d1c6b9475b3dde7ae84c32dcc]
+
+	Merge remote-tracking branch 'origin/master'
+
+	Conflicts:
+		src/lib/MSPUBParser.cpp
+
+2012-05-13  Brennan Vincent  <brennanv@email.arizona.edu>  [8b604c7bfa0a39b40f48b1655af5428ea65e2d33]
+
+	Find and add the correct number of pages, with size taken from the global document chunk.
+
+
+2012-05-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [d43cb56f80ff33331afbf7272bc278bf5abcee45]
+
+	Fix non-debug build
+
+
+2012-05-11  Brennan Vincent  <brennanv@email.arizona.edu>  [faabe873b9f18b5b5bd064cfa6e6aec6879b1613]
+
+	Trivial change in debug code
+
+
+2012-03-27  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f74037ef3414e35602261e63c9ef6674d4ecfdce]
+
+	unsigned / signed comparison
+
+
+2012-03-27  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [64ae1d47ed58d87d84c9318aec8e70a8115f59f7]
+
+	Some attempt at parsing MS Pub Contents stream
+
+
+2012-03-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [fd85848477e1503306be9666e1902ef47206dfe6]
+
+	fix overkeen inplace editing
+
+
+2012-03-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [116589deb324650e198abe8aeb7fc5f43d1323b8]
+
+	White space change
+
+
+2012-03-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [5b71ef21641c97d0007bc79feae60351e88e0658]
+
+	Stub the MSPUBCollector class too
+
+
+2012-03-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0523a51d7d19ce46b4a67dcfe61a44eea9538ced]
+
+	pub2xhtml adapted
+
+
+2012-03-23  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [28d915e57621def2b84825f2977ea0fc5120c532]
+
+	Some more bootstrapping of the parser
+
+
+2012-02-14  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b8c50c8337c4fe961755e16424374fc630ceb38f]
+
+	's/visio/mspub/g'
+
+
+2012-01-27  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [2a9b183b2b350b01bd33bda558d5ad3516213eea]
+
+	Fix the buildnumber.sh script
+
+
+2012-01-27  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [57e8184632263e1eb485ade14c0851831df158bc]
+
+	Fix mingw build
+
+
+2012-01-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [14342c7ce5eff8ef99b8dfb6152a26d5e8c894a6]
+
+	Detect MS Publisher document by introspecting it
+
+
+2012-01-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [82de040e2b2999b2023b69cbb4827708a964c127]
+
+	Removing some traces of Corel Draw :)
+
+
+2012-01-24  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [90e2a38a80fc611fcc55d479d55f82aa7fff23c4]
+
+	Initial libmspub skeleton
+
