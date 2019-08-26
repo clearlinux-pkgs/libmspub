@@ -4,7 +4,7 @@
 #
 Name     : libmspub
 Version  : 0.1.4
-Release  : 4
+Release  : 5
 URL      : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Summary  : Library for parsing the Microsoft Publisher file format structure
@@ -39,6 +39,7 @@ Group: Development
 Requires: libmspub-lib = %{version}-%{release}
 Requires: libmspub-bin = %{version}-%{release}
 Provides: libmspub-devel = %{version}-%{release}
+Requires: libmspub = %{version}-%{release}
 
 %description dev
 dev components for the libmspub package.
@@ -76,20 +77,28 @@ license components for the libmspub package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1542500122
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1566839845
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1542500122
+export SOURCE_DATE_EPOCH=1566839845
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libmspub
 cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libmspub/COPYING.MPL
