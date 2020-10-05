@@ -4,7 +4,7 @@
 #
 Name     : libmspub
 Version  : 0.1.4
-Release  : 7
+Release  : 8
 URL      : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Summary  : Library for parsing the Microsoft Publisher file format structure
@@ -19,6 +19,7 @@ BuildRequires : pkgconfig(icu-i18n)
 BuildRequires : pkgconfig(librevenge-0.0)
 BuildRequires : pkgconfig(librevenge-stream-0.0)
 BuildRequires : pkgconfig(zlib)
+Patch1: fix-build.patch
 
 %description
 libmspub is a library and a set of tools for reading and converting MS
@@ -72,20 +73,22 @@ license components for the libmspub package.
 
 %prep
 %setup -q -n libmspub-0.1.4
+cd %{_builddir}/libmspub-0.1.4
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566839845
+export SOURCE_DATE_EPOCH=1601862927
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -95,13 +98,13 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1566839845
+export SOURCE_DATE_EPOCH=1601862927
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libmspub
-cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libmspub/COPYING.MPL
+cp %{_builddir}/libmspub-0.1.4/COPYING.MPL %{buildroot}/usr/share/package-licenses/libmspub/9744cedce099f727b327cd9913a1fdc58a7f5599
 %make_install
 
 %files
@@ -130,4 +133,4 @@ cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libmspub/COPYING.MPL
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/libmspub/COPYING.MPL
+/usr/share/package-licenses/libmspub/9744cedce099f727b327cd9913a1fdc58a7f5599
