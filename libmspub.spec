@@ -5,7 +5,7 @@
 #
 Name     : libmspub
 Version  : 0.1.4
-Release  : 9
+Release  : 10
 URL      : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Summary  : Library for parsing the Microsoft Publisher file format structure
