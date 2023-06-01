@@ -5,7 +5,7 @@
 #
 Name     : libmspub
 Version  : 0.1.4
-Release  : 11
+Release  : 12
 URL      : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libmspub-0.1.4.tar.xz
 Summary  : Library for parsing the Microsoft Publisher file format structure
@@ -89,7 +89,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685639323
+export SOURCE_DATE_EPOCH=1685642607
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -121,7 +121,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1685639323
+export SOURCE_DATE_EPOCH=1685642607
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libmspub
 cp %{_builddir}/libmspub-%{version}/COPYING.MPL %{buildroot}/usr/share/package-licenses/libmspub/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
